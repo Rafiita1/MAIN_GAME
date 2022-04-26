@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class LibroHistoria : MonoBehaviour
 {
-    public bool libroAbierto = false;
-    public GameObject libro;
-    public GameObject camaraLibro;
+   public bool libroAbierto = false;
+  
     Animator anim;
+    public GameObject canvasMenu;
 
     void Start()
     {
@@ -18,44 +18,38 @@ public class LibroHistoria : MonoBehaviour
     }
     void Update()
     {
-        if (libroAbierto == false && Input.GetKey(KeyCode.M))
+        if (libroAbierto == false && Input.GetKeyUp(KeyCode.M))
         {
+           
+            anim.SetBool("abrir", true);
+          
             
-            anim.SetBool("Open", true);
-            camaraLibro.SetActive(true);
-
-
-            ReseumeGame();
+            Invoke("AbrirLibro", 1.0f);
             
         }
-        else if (libroAbierto == true && Input.GetKey(KeyCode.M))
+        if (libroAbierto == true && Input.GetKeyUp(KeyCode.M))
         {
-            Time.timeScale = 1;
-            libro.SetActive(false);
-            camaraLibro.SetActive(false);
+            anim.SetBool("abrir", false);
 
-            libroAbierto = false;
-
-
+            libroAbierto = false ;
+            CerrarLibro();
         }
     }
 
-  
-    public void ReseumeGame()
+    void AbrirLibro()
     {
-        StartCoroutine(Resuming());
-
-    }
-
-    IEnumerator Resuming()
-    {
-        yield return new WaitForSeconds(1);
         libroAbierto = true;
-        anim.SetBool("Open", false);
         Time.timeScale = 0;
-        StopCoroutine(Resuming());
+
+
+    }
+   
+    void CerrarLibro()
+    {
+        
+        Time.timeScale = 1;
+     
+
     }
 
-
- 
 }
