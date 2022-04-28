@@ -8,18 +8,36 @@ public class Shooting : MonoBehaviour
     public float range = 50f;
     public ParticleSystem muzzleFlash;
     public float fireRate = 15f;
-    public GameObject impactEffect;
+    public int maxAmmo = 20;
+    private int currentAmmo;
+    public float reloadTime = 3f;
+    private bool isReloading = false;
+    
 
     private float nextTimeToFire = 0f;
     
 
     public Camera cam;
 
+    private void Start()
+    {
+        if (currentAmmo == -1)
+            currentAmmo = maxAmmo;
 
+        
+    }
 
     void Update()
     {
+        if (isReloading)
+            return;
 
+        
+        if (currentAmmo <= 0)
+        {
+            StartCoroutine(Reload());
+            return;
+        }
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
             Shoot();
@@ -30,9 +48,22 @@ public class Shooting : MonoBehaviour
 
 
     }
+
+    IEnumerator Reload()
+    {
+        isReloading = true; 
+        Debug.Log("Reloading...");
+
+        yield return new  WaitForSeconds(reloadTime);
+        currentAmmo = maxAmmo;
+        isReloading = false;
+
+
+    }
     void Shoot()
     {
         muzzleFlash.Play();
+        currentAmmo--;
         RaycastHit hit;
 
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
@@ -49,7 +80,7 @@ public class Shooting : MonoBehaviour
 
         }
 
-        GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+        
     }
 
  
