@@ -26,7 +26,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+      
+     
+
+
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (isGrounded && velocity.y < 0)
@@ -54,6 +58,14 @@ public class PlayerMovement : MonoBehaviour
             speed = 6f;
 
 
+        }
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            speed = 2f;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            speed = 4f;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
