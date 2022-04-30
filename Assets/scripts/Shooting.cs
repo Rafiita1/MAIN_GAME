@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
+    public Transform ammo;
     private GameObject go;
     public static int artefacto;
     public float grenadeRange;
@@ -19,7 +21,7 @@ public class Shooting : MonoBehaviour
     Animator anim;
     public GameObject brazos;
     Animator animArms;
-    public Transform cam1;
+    public Transform posicionArt;
     Rigidbody rb;
     private float nextTimeToFire = 0f;
     
@@ -36,7 +38,7 @@ public class Shooting : MonoBehaviour
         if (currentAmmo == -1)
             currentAmmo = maxAmmo;
         rb = Artefacto1.GetComponent<Rigidbody>();
-        go = GameObject.Find("artefacto1(Clone)");
+        go = GameObject.Find(go.name);
     }
 
 
@@ -49,8 +51,14 @@ public class Shooting : MonoBehaviour
     {
         if (isReloading)
             return;
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            anim.SetBool("Reload", true);
+            animArms.SetBool("ReloadArms", true);
+            StartCoroutine(Reload());
+            return;
+        }
 
-        
         if (currentAmmo <= 0)
         {
             StartCoroutine(Reload());
@@ -65,10 +73,19 @@ public class Shooting : MonoBehaviour
         ReloadAnimation();
 
 
-        if (Input.GetKeyDown(KeyCode.G) && artefacto == 1)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && artefacto >= 1)
         {
-
+            anim.SetBool("Lanzagranadas", true);
+            animArms.SetBool("Lanzagranadas", true);
+            
             Launch();
+
+         
+        }
+        else
+        {
+            anim.SetBool("Lanzagranadas", false);
+            animArms.SetBool("Lanzagranadas", false);
         }
 
     }
@@ -76,12 +93,12 @@ public class Shooting : MonoBehaviour
     private void Launch()
     {
 
-        GameObject Artefacto1Instance = Instantiate(Artefacto1, cam1.position,cam1.rotation);
-        Artefacto1Instance.GetComponent<Rigidbody>().AddForce(cam1.forward * grenadeRange, ForceMode.Impulse);
+        GameObject Artefacto1Instance = Instantiate(Artefacto1, posicionArt.position,posicionArt.rotation);
+        Artefacto1Instance.GetComponent<Rigidbody>().AddForce(posicionArt.forward * grenadeRange, ForceMode.Impulse);
         artefacto--;
-        Destroy(go, 3f);
+      
+       
 
-        
         if (artefacto < 0)
         {
             artefacto = 0;
@@ -95,6 +112,7 @@ public class Shooting : MonoBehaviour
         {
             anim.SetBool("Reload", true);
             animArms.SetBool("ReloadArms", true);
+            
         }
         if (currentAmmo > 0)
         {
@@ -102,7 +120,7 @@ public class Shooting : MonoBehaviour
             anim.SetBool("Reload", false);
         }
 
-
+       
     }
     IEnumerator Reload()
     {
@@ -110,6 +128,7 @@ public class Shooting : MonoBehaviour
         Debug.Log("Reloading...");
 
         yield return new  WaitForSeconds(reloadTime);
+        ammo.GetComponent<Text>().text = "20" + ammo.name.ToString();
         currentAmmo = maxAmmo;
         isReloading = false;
 
@@ -117,10 +136,17 @@ public class Shooting : MonoBehaviour
     }
     void Shoot()
     {
+        ammo.GetComponent<Text>().text = currentAmmo.ToString() + ammo.name.ToString(); ;
         muzzleFlash.Play();
         currentAmmo--;
         RaycastHit hit;
 
+
+        if (currentAmmo == 0)
+        {
+            ammo.GetComponent<Text>().text = "0" + ammo.name.ToString(); ;
+
+        }
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);

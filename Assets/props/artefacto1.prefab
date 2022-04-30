@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 7016440838987615127}
   - component: {fileID: 5096826340065574749}
   - component: {fileID: 909203059727614664}
+  - component: {fileID: 4080428212089961066}
+  - component: {fileID: 993190873672153357}
+  - component: {fileID: -1072754195975875874}
   m_Layer: 0
   m_Name: artefacto1
   m_TagString: Untagged
@@ -98,3 +101,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4080428212089961066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754111901931265672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cdaa363dee08d54d84c0649636a996d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObject: {fileID: 6264714141868065842}
+  effectoExplosion: {fileID: 4542556100454334226, guid: f845396186368a74f970d96088252f03, type: 3}
+--- !u!65 &993190873672153357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754111901931265672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4501157, y: 1.4532677, z: 1.9251103}
+  m_Center: {x: -0.000000029802322, y: 0, z: 0.23592132}
+--- !u!65 &-1072754195975875874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754111901931265672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4501157, y: 1.4532677, z: 1.9251103}
+  m_Center: {x: -0.000000029802322, y: 0, z: 0.23592132}

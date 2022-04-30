@@ -6,7 +6,7 @@ public class Ammo : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Shooting.artefacto = 1;
+        Shooting.artefacto++;
         Destroy(gameObject);
     }
 }
