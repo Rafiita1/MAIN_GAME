@@ -1,0 +1,519 @@
+<head>
+	<title>Post Processing Ultimate</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<link rel = "icon" type = "image/png" href = "images/icon.png">
+	<meta name = "viewport" content = "width = device-height, initial-scale = 0.5">
+</head>
+<body>
+	<div class = "header">
+		<a href = "index.html"><img src = "images/top.png" class = "banner"></a>
+		<hr>
+		<a href = "https://www.assetstore.unity3d.com/#!/content/104053" class = "ta">Asset Store</a>
+		<a href = "index.html" class = "ta">How to start</a>
+		<a href = "https://forum.unity.com/threads/post-processing-ultimate-post-processing-stack-v2-visual-scripting-custom-effects-editor.521398/" class = "ta">Forum</a>
+		<a href = "samples.html" class = "ta">Effects</a>
+		<a href = "nodes.html" class = "ta">Nodes</a>
+		<a href = "tutorials.html" class = "ta">Tutorials</a>
+	</div>
+	<div class = "navigation">
+		<ol>
+			<li><a href = "#n1" class = "na">Installation</a></li>
+			<li><a href = "#n2" class = "na">Left Panel</a>
+				<ol>
+					<li><a href = "#n21" class = "na">Open & Save</a></li>
+					<li><a href = "#n22" class = "na">General information</a></li>
+					<li><a href = "#n23" class = "na">Render queue</a></li>
+					<li><a href = "#n24" class = "na">Global variables</a></li>
+				</ol>
+			</li>
+			<li><a href = "#n3" class = "na">Editor</a>
+				<ol>
+					<li><a href = "#n31" class = "na">General movement</a></li>
+					<li><a href = "#n32" class = "na">Operations on nodes</a></li>
+					<li><a href = "#n33" class = "na">Shortcuts</a></li>
+				</ol>
+			</li>
+			<li><a href = "#n4" class = "na">Function Editor</a></li>
+		</ol>
+	</div>
+	<div class = "content">
+		<a name = "n1"><h1>Installation</h1></a>
+		<hr>
+		<p>- Import PPSv2 using Package Manager - Window - > Package Manager -> All -> Post Processing -> Install</p>
+		<p>- Download and import Post Processing Ultimate</p>
+		<h3>First steps</h3>
+		<p>- Open Shader Editor</p>
+		<img src = "images/Installation/0.png" class = "wide">
+		<br>
+		<img src = "images/Installation/1.png" class = "wide">
+		<p>- Name Your shader and compile it</p>
+		<img src = "images/Installation/2.png" class = "wide">
+		<p>- If PPS is configured properly, You should be able to add Your brand new post processing effect to Post Processing Volume</p>
+		<img src = "images/Installation/3.png" class = "wide">
+		<p>Congratulations!</p>
+		<a name = "n2"><h1>Left Panel</h1></a>
+		<hr>
+		<a name = "n21"><h3>1. Open & Save</h3></a>
+		<div class = "node">
+			<img src = "images/Left/Open/0.png" class = "wide">
+			<p>- Resets current window</p>
+			<p>- Opens shader file</p>
+			<p>- Compiles shader to new file</p>
+			<p>- Overwrites current file</p>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Open/1.png" class = "wide">
+			<p>Current shader file path</p>
+		</div>
+		<a name = "n22"><h3>2. General information</h3></a>
+		<div class = "node">
+			<img src = "images/Left/General/0.png" class = "wide">
+			<p>Destined Injection Point</p>
+			<p>- AfterStack: the effect will be applied after the builtin stack and before FXAA (if it's enabled) & final-pass dithering.</p>
+			<p>- BeforeStack: the effect will be applied before the built-in stack kicks-in. That includes anti-aliasing, depth-of-field, tonemapping etc.</p>
+			<p>- BeforeTransparent: the effect will only be applied to opaque objects before the transparent pass is done.</p>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/General/1.png" class = "wide">
+			<p>- Name of the shader</p>
+			<p>- Visual representation of data flow</p>
+			<p>- Destined shader precision</p>
+			<p>- Select current shader pass</p>
+			<p>- Add new pass</p>
+			<p>- Remove current pass, add new pass</p>
+		</div>
+		<a name = "n23"><h3>3. Render queue</h3></a>
+		<div class = "node">
+			<img src = "images/Left/Render/0.png" class = "wide">
+			<p>Amount of temp textures, useful when You need to store image between different render passes</p>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Render/1.png" class = "wide">
+			<p>- Input render texture</p>
+			<p>- Output render texture</p>
+			<p>- Shader pass to execute between textures</p>
+			<p>- Amount of iterations or global variable (Int or IntSlider) to manipulate iterations</p>
+			<p>- Delete this render pass</p>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Render/2.png" class = "wide">
+			<p>Add new render pass</p>
+		</div>
+		<p><a href = "tutorials.html#n4" class = "ca">More Information...</a></p>
+		<a name = "n24"><h3>4. Global variables</h3></a>
+		<div class = "node">
+			<img src = "images/Left/Global/0.png" class = "wide">
+			<p>Add new global variable of selected type</p>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/1.png" class = "nodeimage">
+			<table class = "table12">
+				<tr>
+					<td colspan="2">Int</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default value</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/2.png" class = "nodeimage">
+			<table class = "table12">
+				<tr>
+					<td colspan="2">Float</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default value</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/3.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">IntSlider</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default value</td>
+				</tr>
+				<tr>
+					<td colspan="2">Range</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/4.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">FloatSlider</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default value</td>
+				</tr>
+				<tr>
+					<td colspan="2">Range</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/5.png" class = "nodeimage">
+			<table class = "table11">
+				<tr>
+					<td colspan="2">Color</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default value</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/6.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">Vector2</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default value</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/7.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">Vector3</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default value</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/8.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">Vector4</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default value</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/9.png" class = "nodeimage">
+			<table class = "table9">
+				<tr>
+					<td colspan="2">Texture</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/10.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Spline</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Left/Global/11.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">Bool</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name</td>
+				</tr>
+				<tr>
+					<td colspan="2">Tooltip</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default value</td>
+				</tr>
+				<tr>
+					<td colspan="2">Deletes this property</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<p>Change order by dragging the property label</p>
+		</div>
+		<p><a href = "tutorials.html#n5" class = "ca">More Information...</a></p>
+		<a name = "n3"><h1>Editor</h1></a>
+		<hr>
+		<a name = "n31"><h3>1. General movement</h3></a>
+		<div class = "node">
+			<h4>===== Changing position =====</h4>
+			<p>- LMB click on node and drag it</p>
+			<p>- LMB drag on background to select nodes, MMB drag to move selected nodes</p>
+			<p>- MMB without selection to move all nodes</p>
+		</div>
+		<div class = "node">
+			<h4>===== Changing connections =====</h4>
+			<p>- LMB drag connected left type joint to disconnect</p>
+			<p>- LMB drag right type joint and release LMP above left type joint to connect</p>
+			<p>- LMB drag empty left type joint and release LMP above right type joint to connect</p>
+		</div>
+		<div class = "tip">
+			<p>Pro Tip!</p>
+			<p>Use CTRL + Z to undo and CTRL + Y to redo</p>
+		</div>
+		<a name = "n32"><h3>2. Operations on nodes</h3></a>
+		<div class = "node">
+			<h4>===== Adding nodes =====</h4>
+			<p>- RMB click to open context menu with available nodes, find destined one by hand or by using search bar</p>
+		</div>
+		<div class = "node">
+			<h4>===== Deleting nodes =====</h4>
+			<p>- LMB click to select single node, delete selected by pressing delete button</p>
+			<p>- Select multiple nodes, delete</p>
+		</div>
+		<div class = "node">
+			<h4>===== Copying nodes =====</h4>
+			<p>- Select nodes and click CTRL + C to copy them</p>
+			<p>- Click LMB to copy items, or RMB to cancel copying</p>
+		</div>
+		<a name = "n33"><h3>3. Shortcuts</h3></a>
+		<table class = "table12">
+			<tr>
+				<td class = "left">Shortcut</td>
+				<td class = "right">Node</td>
+			</tr>
+			<tr>
+		</table>
+		<table>
+			<tr>
+				<td class = "left">A + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Arithmetic/0.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">S + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Arithmetic/1.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">M + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Arithmetic/2.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">D + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Arithmetic/3.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">E + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/17.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">F + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/19.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">L + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/28.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">N + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/34.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">P + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/35.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">R + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/39.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">T + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/48.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">I + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Logic/0.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">1 + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Value/0.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">2 + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Value/1.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">3 + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Value/2.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">4 + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Value/3.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">C + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Custom/0.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + M + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Arithmetic/4.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + C + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/8.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + D + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/16.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + E + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/18.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + F + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/22.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + L + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/27.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + R + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/37.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + S + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/43.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + T + LMB</td>
+				<td class = "right"><img src = "images/Nodes/HLSL/50.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + 1 + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Variable/0.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + 2 + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Variable/1.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + 3 + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Variable/2.png" class = "wide"></td>
+			</tr>
+			<tr>
+				<td class = "left">Left Alt + 4 + LMB</td>
+				<td class = "right"><img src = "images/Nodes/Variable/3.png" class = "wide"></td>
+			</tr>
+		</table>
+		<a name = "n4"><h1>Function Editor</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/FE/0.png" class = "wide">
+			<p>- Open Function Editor</p>
+		</div>
+		<div class = "node">
+			<img src = "images/FE/1.png" class = "wide">
+			<p>Basically, everything works exactly as in Shader Editor, but due to HLSL functions nature, some features like global variables, or camera nodes are unavailable</p>
+		</div>
+		<p><a href = "tutorials.html#n7" class = "ca">More Information...</a></p>
+		<div class = "tip">
+			<p>Pro Tip!</p>
+			<p>To avoid errors that can be thrown by updating old functions, it's smart to change only a main part of a function. If inputs and output size would be the same - everything should work without any errors</p>
+		</div>
+	</div>
+	<div class = "footer">
+		<a href = "https://assetstore.unity.com/publishers/25212"><img src = "images/bottom.png" class = "footerbanner"></a>
+		<hr>
+		<label class = "support">Support: </label><a href = "mailto:assetstore.ntec@gmail.com" class = "fa">assetstore.ntec@gmail.com</a>
+		<br>
+		<label class = "support">&copy; Dawid Moza</label>
+	</div>
+</body>

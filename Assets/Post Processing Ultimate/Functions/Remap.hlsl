@@ -1,0 +1,9 @@
+//{"Values":["0","Remap","_MainTex","0",""]}
+//\	Output\	2504\	524\	192\	295\		/3\		False\			null\			null\		False\			null\			null\		False\			null\			null\		False\			null\			null\		True\			9\			0\	Input1\	578\	520\	192\	135\		/InputMin\		True\			0\			0\	Input1\	618\	700\	192\	135\		/InputMax\		True\			0\			0\	Input1\	652\	924\	192\	135\		/OutputMin\		True\			7\			2\	Input1\	658\	1150\	192\	135\		/OutputMax\		True\			7\			1\	Input4\	566\	116\	192\	295\		/Value\		False\			null\			null\		False\			null\			null\		False\			null\			null\		False\			null\			null\		True\			0\			0\	Sub\	1074\	242\	192\	215\		/4\		True\			null\			null\		True\			5\			4\		True\			1\			0\		False\			null\			null\	Sub\	1430\	768\	192\	215\		/4\		True\			null\			null\		True\			4\			0\		True\			3\			0\		False\			null\			null\	Sub\	1090\	598\	192\	215\		/4\		True\			null\			null\		True\			2\			0\		True\			1\			0\		False\			null\			null\	Add\	1990\	870\	192\	215\		/4\		True\			null\			null\		True\			3\			0\		True\			10\			0\		False\			null\			null\	Mul\	1868\	436\	192\	215\		/4\		True\			null\			null\		True\			11\			0\		True\			7\			0\		False\			null\			null\	Div\	1444\	222\	192\	215\		/4\		True\			null\			null\		True\			6\			0\		True\			8\			0\		False\			null\			null
+//{"Name":"Remap","OutputSize":4,"InputSize":[4,1,1,1,1],"InputName":["Value","OutputMax","OutputMin","InputMax","InputMin"]}
+
+half4 Remap(half4 Value, half1 OutputMax, half1 OutputMin, half1 InputMax, half1 InputMin){
+	half4 Output = 0.0;
+	Output = (OutputMin + (((Value - InputMin) / (InputMax - InputMin)) * (OutputMax - OutputMin)));
+	return Output;
+}

@@ -1,0 +1,64 @@
+using UnityEngine;
+using UnityEditor;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System;
+
+namespace NTEC.PPU{
+	public class Variable2 : VisualElement{
+		
+		private Color background = new Color(0.5f, 0, 0.75f, 0.25f);
+		private Texture2D nodeBack;
+		
+		public Variable2(){
+			position = new Rect(32, 32, 192, 335);
+			name = "Variable2";
+			joints.Add(new Joint(1, 4));
+			joints.Add(new Joint(1, 4));
+			joints.Add(new Joint(1, 4));
+			joints.Add(new Joint(0, 4));
+			joints.Add(new Joint(0, 4));
+			joints.Add(new Joint(0, 4));
+			joints[0].prohibitions.Add(2);
+			joints[1].prohibitions.Add(2);
+			joints[2].prohibitions.Add(0);
+			joints[2].prohibitions.Add(1);
+			joints[3].prohibitions.Add(5);
+			joints[4].prohibitions.Add(5);
+			joints[5].prohibitions.Add(3);
+			joints[5].prohibitions.Add(4);
+			Values.Add("0");
+			Values.Add("x");
+		}
+		
+		public override void Show(){
+			base.Show();
+			if (nodeBack == null){
+				nodeBack = CombineTextures(Resources.Load("Nodes/Top") as Texture2D, position.height, background);
+			}
+			GUI.DrawTexture(position, nodeBack);
+			for (int i = 0; i < joints.Count; ++i){
+				if (joints[i].type == 0){
+					joints[i].coords = new Vector2(position.x - 48, 8 + position.y + (i + 2) * (40));
+					joints[i].Show();
+				} else {
+					joints[i].coords = new Vector2(position.x + position.width + 24, 8 + position.y + (i + 2) * (40));
+					joints[i].Show();
+				}
+			}
+		}
+		
+		public override void ShowLabels(){
+			base.ShowLabels();
+			EditorGUI.LabelField(new Rect(position.x * scale, position.y * scale, position.width * scale, 40 * scale), new GUIContent(name, Tooltips.List(name)), style[0]);
+			Values[0] = EditorGUI.Popup(new Rect(position.x * scale, (position.y + 1 * (40) + 4) * scale, position.width * scale, 32 * scale), Int32.Parse(Values[0]), options.ToArray(), style[4]).ToString();
+			EditorGUI.LabelField(new Rect((position.x + 4) * scale, (position.y + 2 * (40) + 8) * scale, (position.width - 8) * scale, 32 * scale), new GUIContent("X Value", "First output value"), style[2]);
+			EditorGUI.LabelField(new Rect((position.x + 4) * scale, (position.y + 3 * (40) + 8) * scale, (position.width - 8) * scale, 32 * scale), new GUIContent("Y Value", "Second output value"), style[2]);
+			EditorGUI.LabelField(new Rect((position.x + 4) * scale, (position.y + 4 * (40) + 8) * scale, (position.width - 8) * scale, 32 * scale), new GUIContent("XY", "Both output values"), style[2]);
+			EditorGUI.LabelField(new Rect((position.x + 4) * scale, (position.y + 5 * (40) + 8) * scale, (position.width) * scale, 32 * scale), new GUIContent("X Value", "First input value"), style[1]);
+			EditorGUI.LabelField(new Rect((position.x + 4) * scale, (position.y + 6 * (40) + 8) * scale, (position.width) * scale, 32 * scale), new GUIContent("Y Value", "Second input "), style[1]);
+			EditorGUI.LabelField(new Rect((position.x + 4) * scale, (position.y + 7 * (40) + 8) * scale, (position.width) * scale, 32 * scale), new GUIContent("XY", "Both input values"), style[1]);
+		}
+	}
+}

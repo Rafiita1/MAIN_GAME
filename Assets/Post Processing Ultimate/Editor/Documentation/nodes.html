@@ -1,0 +1,3185 @@
+<head>
+	<title>Post Processing Ultimate</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<link rel = "icon" type = "image/png" href = "images/icon.png">
+	<meta name = "viewport" content = "width = device-height, initial-scale = 0.5">
+</head>
+<body>
+	<div class = "header">
+		<a href = "index.html"><img src = "images/top.png" class = "banner"></a>
+		<hr>
+		<a href = "https://www.assetstore.unity3d.com/#!/content/104053" class = "ta">Asset Store</a>
+		<a href = "index.html" class = "ta">How to start</a>
+		<a href = "https://forum.unity.com/threads/post-processing-ultimate-post-processing-stack-v2-visual-scripting-custom-effects-editor.521398/" class = "ta">Forum</a>
+		<a href = "samples.html" class = "ta">Effects</a>
+		<a href = "nodes.html" class = "ta">Nodes</a>
+		<a href = "tutorials.html" class = "ta">Tutorials</a>
+	</div>
+	<div class = "navigation">
+		<ol>
+			<li><a href = "#n1" class = "na">Arithmetic</a></li>
+			<li><a href = "#n2" class = "na">Camera</a></li>
+			<li><a href = "#n3" class = "na">Constant</a></li>
+			<li><a href = "#n4" class = "na">Custom</a></li>
+			<li><a href = "#n5" class = "na">Data</a></li>
+			<li><a href = "#n6" class = "na">FE</a></li>
+			<li><a href = "#n7" class = "na">HLSL Function</a></li>
+			<li><a href = "#n8" class = "na">Input</a></li>
+			<li><a href = "#n9" class = "na">Logic</a></li>
+			<li><a href = "#n10" class = "na">PPS Function</a></li>
+			<li><a href = "#n11" class = "na">Predefined Macro</a></li>
+			<li><a href = "#n12" class = "na">Value</a></li>
+			<li><a href = "#n13" class = "na">Variable</a></li>
+		</ol>
+	</div>
+	<div class = "content">
+		<a name = "n1"><h1>Arithmetic</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Arithmetic/0.png" class = "nodeimage">
+			<table class = "table1">
+				<tr>
+					<td colspan="2">Add</td>
+				</tr>
+				<tr>
+					<td colspan="2">Combines numbers</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Arithmetic/0A.png" class = "nodeimage">
+			<table class = "table1">
+				<tr>
+					<td colspan="2">Av</td>
+				</tr>
+				<tr>
+					<td colspan="2">Arithmetic mean, average of inputs</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Arithmetic/1.png" class = "nodeimage">
+			<table class = "table1">
+				<tr>
+					<td colspan="2">Sub</td>
+				</tr>
+				<tr>
+					<td colspan="2">Finds difference between numbers</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Arithmetic/2.png" class = "nodeimage">
+			<table class = "table1">
+				<tr>
+					<td colspan="2">Mul</td>
+				</tr>
+				<tr>
+					<td colspan="2">Combines multipliers and the multiplicands</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Arithmetic/3.png" class = "nodeimage">
+			<table class = "table1">
+				<tr>
+					<td colspan="2">Div</td>
+				</tr>
+				<tr>
+					<td colspan="2">Finds the quotient of numbers</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Arithmetic/4.png" class = "nodeimage">
+			<table class = "table1">
+				<tr>
+					<td colspan="2">Mod</td>
+				</tr>
+				<tr>
+					<td colspan="2">Finds the remainder after division</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n2"><h1>Camera</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Camera/0.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">CameraOutput</td>
+				</tr>
+				<tr>
+					<td colspan="2">Single pixel color value</td>
+				</tr>
+				<tr>
+					<td class = "left">Red</td>
+					<td class = "right">Pixel red channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Pixel green channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Blue</td>
+					<td class = "right">Pixel blue channel</td>
+				</tr>
+				<tr>
+					<td class = "left">RGB</td>
+					<td class = "right">All pixel channels</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Camera/1.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">CameraInput</td>
+				</tr>
+				<tr>
+					<td colspan="2">Main texture sampler</td>
+				</tr>
+				<tr>
+					<td class = "left">Red</td>
+					<td class = "right">Texture red channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Texture green channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Blue</td>
+					<td class = "right">Texture blue channel</td>
+				</tr>
+				<tr>
+					<td class = "left">RGB</td>
+					<td class = "right">All texture channels</td>
+				</tr>
+				<tr>
+					<td class = "left">X axis</td>
+					<td class = "right">Texture X coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">Y axis</td>
+					<td class = "right">Texture Y coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Both texture coordinates</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Camera/2.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">CameraDepth</td>
+				</tr>
+				<tr>
+					<td colspan="2">Main texture depth</td>
+				</tr>
+				<tr>
+					<td class = "left">Depth</td>
+					<td class = "right">Texture depth value</td>
+				</tr>
+				<tr>
+					<td class = "left">X axis</td>
+					<td class = "right">Texture X coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">Y axis</td>
+					<td class = "right">Texture Y coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Both texture coordinates</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Camera/3.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">DefaultUV</td>
+				</tr>
+				<tr>
+					<td colspan="2">Default texture coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">X axis</td>
+					<td class = "right">Texture X coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">Y axis</td>
+					<td class = "right">Texture Y coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Both texture coordinates</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Camera/4.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">StereoUV</td>
+				</tr>
+				<tr>
+					<td colspan="2">Stereo texture coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">X axis</td>
+					<td class = "right">Texture X coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">Y axis</td>
+					<td class = "right">Texture Y coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Both texture coordinates</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Camera/5.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">SpecialTex</td>
+				</tr>
+				<tr>
+					<td colspan="2">Special texture sampler</td>
+				</tr>
+				<tr>
+					<td class = "left">Red</td>
+					<td class = "right">Texture red channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Texture green channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Blue</td>
+					<td class = "right">Texture blue channel</td>
+				</tr>
+				<tr>
+					<td class = "left">RGB</td>
+					<td class = "right">All texture channels</td>
+				</tr>
+				<tr>
+					<td class = "left">X axis</td>
+					<td class = "right">Texture X coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">Y axis</td>
+					<td class = "right">Texture Y coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Both texture coordinates</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Camera/6.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">TempTex</td>
+				</tr>
+				<tr>
+					<td colspan="2">Temp texture sampler</td>
+				</tr>
+				<tr>
+					<td class = "left">Red</td>
+					<td class = "right">Texture red channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Texture green channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Blue</td>
+					<td class = "right">Texture blue channel</td>
+				</tr>
+				<tr>
+					<td class = "left">RGB</td>
+					<td class = "right">All texture channels</td>
+				</tr>
+				<tr>
+					<td class = "left">X axis</td>
+					<td class = "right">Texture X coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">Y axis</td>
+					<td class = "right">Texture Y coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Both texture coordinates</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Camera/7.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">TexelSize</td>
+				</tr>
+				<tr>
+					<td colspan="2">Texture pixel size</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Texel X value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Texel Y value</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Texel Z value</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Texel W value</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Texel size</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Camera/8.png" class = "nodeimage">
+			<table class = "table2">
+				<tr>
+					<td colspan="2">WorldPosition</td>
+				</tr>
+				<tr>
+					<td colspan="2">Global transform pixel position</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Global transform pixel X position</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Global transform pixel Y position</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Global transform pixel Z position</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZ</td>
+					<td class = "right">Global transform pixel position</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n3"><h1>Constant</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/0.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">HALF_MAX</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 65504.0</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">65504.0</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/1.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">EPSILON</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 1.0e-4</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">1.0e-4</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/2.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">PI</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 3.14159265359</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">3.14159265359</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/3.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">TWO_PI</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 6.28318530718</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">6.28318530718</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/4.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">FOUR_PI</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 12.56637061436</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">12.56637061436</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/5.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">INV_PI</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 0.31830988618</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">0.31830988618</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/6.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">INV_TWO_PI</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 0.15915494309</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">0.15915494309</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/7.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">INV_FOUR_PI</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 0.07957747155</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">0.07957747155</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/8.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">HALF_PI</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 1.57079632679</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">1.57079632679</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/9.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">INV_HALF_PI</td>
+				</tr>
+				<tr>
+					<td colspan="2">Constant value: 0.636619772367</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">0.636619772367</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/10.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">FLT_EPSILON</td>
+				</tr>
+				<tr>
+					<td colspan="2">Smallest positive number, such that 1.0 + FLT_EPSILON != 1.0: 1.192092896e-07</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">1.192092896e-07</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/11.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">FLT_MIN</td>
+				</tr>
+				<tr>
+					<td colspan="2">Minimum representable positive floating-point number: 1.175494351e-38</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">1.175494351e-38</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Constant/12.png" class = "nodeimage">
+			<table class = "table3">
+				<tr>
+					<td colspan="2">FLT_MAX</td>
+				</tr>
+				<tr>
+					<td colspan="2">Maximum representable floating-point number: 3.402823466e+38</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">3.402823466e+38</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n4"><h1>Custom</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Custom/0.png" class = "nodeimage">
+			<table class = "table4">
+				<tr>
+					<td colspan="2">Custom</td>
+				</tr>
+				<tr>
+					<td colspan="2">Custom function</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Output X</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Output Y</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Output Z</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Output W</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Input X</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Input Y</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Input Z</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Input W</td>
+				</tr>
+				<tr>
+					<td class = "left">Input</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n5"><h1>Data</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Data/0.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">WorldSpace</td>
+				</tr>
+				<tr>
+					<td colspan="2">_WorldSpaceCameraPos</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">World space camera X position</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">World space camera Y position</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">World space camera Z position</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZ</td>
+					<td class = "right">World space camera position</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Data/1.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">Projection</td>
+				</tr>
+				<tr>
+					<td colspan="2">_ProjectionParams</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">1 (-1 flipped)</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Near</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Far</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">1 / far</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Projection parameters</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Data/2.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">Luminance</td>
+				</tr>
+				<tr>
+					<td colspan="2">unity_ColorSpaceLuminance</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Color space luminance X value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Color space luminance Y value</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Color space luminance Z value</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Color space luminance W value</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Color space luminance</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Data/3.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">DeltaTime</td>
+				</tr>
+				<tr>
+					<td colspan="2">unity_DeltaTime</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Delta time</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">1 / delta time</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Smooth delta time</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">1 / smooth delta time</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Delta time</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Data/4.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">Ortho</td>
+				</tr>
+				<tr>
+					<td colspan="2">unity_OrthoParams</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Width</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Height</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Unused</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Is ortographic?</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Ortographic parameters</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Data/5.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">ZBuffer</td>
+				</tr>
+				<tr>
+					<td colspan="2">_ZBufferParams</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">1 - far / near</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Far / near</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">X / far</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Y / far</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Z buffer parameters</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Data/6.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">Screen</td>
+				</tr>
+				<tr>
+					<td colspan="2">_ScreenParams</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Width</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Height</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">1 + 1 / width</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">1 + 1 / height</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Screen parameters</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Data/7.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">Time</td>
+				</tr>
+				<tr>
+					<td colspan="2">_Time</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Time / 20</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Time</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Time * 2</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Time * 3</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Time</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Data/8.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">SinTime</td>
+				</tr>
+				<tr>
+					<td colspan="2">_SinTime</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Sine of Time / 20</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Sine of Time</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Sine of Time * 2</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Sine of Time * 3</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Sine of Time</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Data/9.png" class = "nodeimage">
+			<table class = "table5">
+				<tr>
+					<td colspan="2">CosTime</td>
+				</tr>
+				<tr>
+					<td colspan="2">_CosTime</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Cosine of Time / 20</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Cosine of Time</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Cosine of Time * 2</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Cosine of Time * 3</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Cosine of Time</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n6"><h1>FE</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/FE/0.png" class = "nodeimage">
+			<table class = "table6">
+				<tr>
+					<td colspan="2">Output</td>
+				</tr>
+				<tr>
+					<td colspan="2">Function output</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Output X</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Output Y</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Output Z</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Output W</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Output XYZW</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/FE/1.png" class = "nodeimage">
+			<table class = "table6">
+				<tr>
+					<td colspan="2">Input1</td>
+				</tr>
+				<tr>
+					<td colspan="2">Single index argument</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Input X</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/FE/2.png" class = "nodeimage">
+			<table class = "table6">
+				<tr>
+					<td colspan="2">Input2</td>
+				</tr>
+				<tr>
+					<td colspan="2">Double index argument</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Input X</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Input Y</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Input XY</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/FE/3.png" class = "nodeimage">
+			<table class = "table6">
+				<tr>
+					<td colspan="2">Input3</td>
+				</tr>
+				<tr>
+					<td colspan="2">Triple index argument</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Input X</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Input Y</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Input Z</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZ</td>
+					<td class = "right">Input XYZ</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/FE/4.png" class = "nodeimage">
+			<table class = "table6">
+				<tr>
+					<td colspan="2">Input4</td>
+				</tr>
+				<tr>
+					<td colspan="2">Quadruple index argument</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">Input X</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Input Y</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Input Z</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Input W</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Input XYZW</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n7"><h1>HLSL Function</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/0.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Abs</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the absolute value of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/1.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Acos</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the arccosine of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/2.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">All</td>
+				</tr>
+				<tr>
+					<td colspan="2">Determines if all components of the specified value are non-zero</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/3.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Any</td>
+				</tr>
+				<tr>
+					<td colspan="2">Determines if any components of the specified value are non-zero</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/4.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Asin</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the arcsine of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/5.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Atan</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the arctangent of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/6.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Atan2</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the arctangent of two values (x,y)</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The x value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The y value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/7.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Ceil</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the smallest integer value that is greater than or equal to the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/8.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Clamp</td>
+				</tr>
+				<tr>
+					<td colspan="2">Clamps the specified value to the specified minimum and maximum range</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">A value to clamp</td>
+				</tr>
+				<tr>
+					<td class = "left">Min</td>
+					<td class = "right">The specified minimum range</td>
+				</tr>
+				<tr>
+					<td class = "left">Max</td>
+					<td class = "right">The specified maximum range</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/9.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Cos</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the cosine of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/10.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Cosh</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the hyperbolic cosine of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/11.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Cross</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the cross product of two floating-point, 3D vectors</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">First floating-point, 3D vector</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Second floating-point, 3D vector</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/12.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Ddx</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the partial derivative of the specified value with respect to the screen-space x-coordinate</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/13.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Ddy</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the partial derivative of the specified value with respect to the screen-space y-coordinate</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/14.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Degrees</td>
+				</tr>
+				<tr>
+					<td colspan="2">Converts the specified value from radians to degrees</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/15.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Distance</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns a distance scalar between two vectors</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The first floating-point vector to compare</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The second floating-point vector to compare</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/16.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Dot</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the dot product of two vectors</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The first vector</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The second vector</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/17.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Exp</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the base-e exponential, or ex, of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/18.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Exp2</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the base 2 exponential, or 2x, of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/19.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Floor</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the greatest integer which is less than or equal to x</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/20.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Fmod</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the floating-point remainder of x/y</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The floating-point dividend</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The floating-point divisor</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/21.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Frac</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the fractional (or decimal) part of x, which is greater than or equal to 0 and less than 1</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/22.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Fwidth</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the absolute value of the partial derivatives of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/23.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Isfinite</td>
+				</tr>
+				<tr>
+					<td colspan="2">Determines if the specified floating-point value is finite</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/24.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Isinf</td>
+				</tr>
+				<tr>
+					<td colspan="2">Determines if the specified value is infinite</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/25.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Isnan</td>
+				</tr>
+				<tr>
+					<td colspan="2">Determines if the specified value is NAN or QNAN</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/26.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Ldexp</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the result of multiplying the specified value by two, raised to the power of the specified exponent</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Exp</td>
+					<td class = "right">The specified exponent</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/27.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Length</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the length of the specified floating-point vector</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/28.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Lerp</td>
+				</tr>
+				<tr>
+					<td colspan="2">Performs a linear interpolation</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The first-floating point value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The second-floating point value</td>
+				</tr>
+				<tr>
+					<td class = "left">S Value</td>
+					<td class = "right">A value that linearly interpolates between the x parameter and the y parameter</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/29.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Log</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the base-e logarithm of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/30.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Log2</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the base-2 logarithm of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/31.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Log10</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the base-10 logarithm of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/32.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Max</td>
+				</tr>
+				<tr>
+					<td colspan="2">Selects the greater of x and y</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The x value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The y value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/33.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Min</td>
+				</tr>
+				<tr>
+					<td colspan="2">Selects the lesser of x and y</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The x value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The y value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/34.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Normalize</td>
+				</tr>
+				<tr>
+					<td colspan="2">Normalizes the specified floating-point vector according to x / length(x)</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/35.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Pow</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the specified value raised to the specified power</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The specified power</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/36.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Radians</td>
+				</tr>
+				<tr>
+					<td colspan="2">Converts the specified value from degrees to radians</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/37.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Reflect</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns a reflection vector using an incident ray and a surface normal</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">I Value</td>
+					<td class = "right">A floating-point, incident vector</td>
+				</tr>
+				<tr>
+					<td class = "left">N Value</td>
+					<td class = "right">A floating-point, normal vector</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/38.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Refract</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns a refraction vector using an entering ray, a surface normal, and a refraction index</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">I Value</td>
+					<td class = "right">A floating-point, ray direction vector</td>
+				</tr>
+				<tr>
+					<td class = "left">N Value</td>
+					<td class = "right">A floating-point, surface normal vector</td>
+				</tr>
+				<tr>
+					<td class = "left">n Value</td>
+					<td class = "right">A floating-point, refraction index scalar</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/39.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Round</td>
+				</tr>
+				<tr>
+					<td colspan="2">Rounds the specified value to the nearest integer</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/40.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Rsqrt</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the reciprocal of the square root of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/41.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Saturate</td>
+				</tr>
+				<tr>
+					<td colspan="2">Clamps the specified value within the range of 0 to 1</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/42.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Sign</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the sign of x</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/43.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Sin</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the sine of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/44.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Sinh</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the hyperbolic sine of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/45.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Smoothstep</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns a smooth Hermite interpolation between 0 and 1, if x is in the range [min, max]</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Min</td>
+					<td class = "right">The minimum range of the x parameter</td>
+				</tr>
+				<tr>
+					<td class = "left">Max</td>
+					<td class = "right">The maximum range of the x parameter</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The specified value to be interpolated</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/46.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Sqrt</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the square root of the specified floating-point value, per component</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/47.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Step</td>
+				</tr>
+				<tr>
+					<td colspan="2">Compares two values, returning 0 or 1 based on which value is greater</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The first floating-point value to compare</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The second floating-point value to compare</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/48.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Tan</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the tangent of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/49.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Tanh</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the hyperbolic tangent of the specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/HLSL/50.png" class = "nodeimage">
+			<table class = "table7">
+				<tr>
+					<td colspan="2">Trunc</td>
+				</tr>
+				<tr>
+					<td colspan="2">Truncates a floating-point value to the integer component</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n8"><h1>Input</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Input/0.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_Int</td>
+				</tr>
+				<tr>
+					<td colspan="2">Int global variable</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/1.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_Float</td>
+				</tr>
+				<tr>
+					<td colspan="2">Float global variable</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/2.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_IntSlider</td>
+				</tr>
+				<tr>
+					<td colspan="2">Int global variable</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/3.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_FloatSlider</td>
+				</tr>
+				<tr>
+					<td colspan="2">Float global variable</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/4.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_Color</td>
+				</tr>
+				<tr>
+					<td colspan="2">Color global variable</td>
+				</tr>
+				<tr>
+					<td class = "left">Red</td>
+					<td class = "right">Red channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Green channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Blue</td>
+					<td class = "right">Blue channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Alpha</td>
+					<td class = "right">Alpha channel</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/5.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_Vector2</td>
+				</tr>
+				<tr>
+					<td colspan="2">Vector2 global variable</td>
+				</tr>
+				<tr>
+					<td class = "left">X</td>
+					<td class = "right">X value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y</td>
+					<td class = "right">Y value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/6.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_Vector3</td>
+				</tr>
+				<tr>
+					<td colspan="2">Vector3 global variable</td>
+				</tr>
+				<tr>
+					<td class = "left">X</td>
+					<td class = "right">X value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y</td>
+					<td class = "right">Y value</td>
+				</tr>
+				<tr>
+					<td class = "left">Z</td>
+					<td class = "right">Z value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/7.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_Vector4</td>
+				</tr>
+				<tr>
+					<td colspan="2">Vector4 global variable</td>
+				</tr>
+				<tr>
+					<td class = "left">X</td>
+					<td class = "right">X value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y</td>
+					<td class = "right">Y value</td>
+				</tr>
+				<tr>
+					<td class = "left">Z</td>
+					<td class = "right">Z value</td>
+				</tr>
+				<tr>
+					<td class = "left">W</td>
+					<td class = "right">W value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/8.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_Texture2D</td>
+				</tr>
+				<tr>
+					<td colspan="2">Texture2D global variable</td>
+				</tr>
+				<tr>
+					<td class = "left">Red</td>
+					<td class = "right">Red channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Green channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Blue</td>
+					<td class = "right">Blue channel</td>
+				</tr>
+				<tr>
+					<td class = "left">Alpha</td>
+					<td class = "right">Alpha channel</td>
+				</tr>
+				<tr>
+					<td class = "left">X axis</td>
+					<td class = "right">Texture X coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">Y axis</td>
+					<td class = "right">Texture Y coordinates</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Both texture coordinates</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/9.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_Spline</td>
+				</tr>
+				<tr>
+					<td colspan="2">Spline global variable</td>
+				</tr>
+				<tr>
+					<td class = "left">X axis</td>
+					<td class = "right">Texture X coordinates</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Input/10.png" class = "nodeimage">
+			<table class = "table8">
+				<tr>
+					<td colspan="2">_Bool</td>
+				</tr>
+				<tr>
+					<td colspan="2">Bool global variable</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n9"><h1>Logic</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Logic/0.png" class = "nodeimage">
+			<table class = "table9">
+				<tr>
+					<td colspan="2">If</td>
+				</tr>
+				<tr>
+					<td colspan="2">Checks if statement is true or false and returns values</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">If output</td>
+				</tr>
+				<tr>
+					<td class = "left">Statement</td>
+					<td class = "right">True or false expression</td>
+				</tr>
+				<tr>
+					<td class = "left">True</td>
+					<td class = "right">True value</td>
+				</tr>
+				<tr>
+					<td class = "left">False</td>
+					<td class = "right">False value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Logic/1.png" class = "nodeimage">
+			<table class = "table9">
+				<tr>
+					<td colspan="2">Compare</td>
+				</tr>
+				<tr>
+					<td colspan="2">Compares two values</td>
+				</tr>
+				<tr>
+					<td class = "left">X > Y</td>
+					<td class = "right">X greater than Y</td>
+				</tr>
+				<tr>
+					<td class = "left">X >= Y</td>
+					<td class = "right">X greater or equal to Y</td>
+				</tr>
+				<tr>
+					<td class = "left">X < Y</td>
+					<td class = "right">X smaller than Y</td>
+				</tr>
+				<tr>
+					<td class = "left">X <= Y</td>
+					<td class = "right">X smaller or equal to Y</td>
+				</tr>
+				<tr>
+					<td class = "left">X == Y</td>
+					<td class = "right">X equal to Y</td>
+				</tr>
+				<tr>
+					<td class = "left">X != Y</td>
+					<td class = "right">X not equal to Y</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The first value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The second value</td>
+				</tr>
+				<tr>
+					<td class = "left">True</td>
+					<td class = "right">True value</td>
+				</tr>
+				<tr>
+					<td class = "left">False</td>
+					<td class = "right">False value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Logic/2.png" class = "nodeimage">
+			<table class = "table9">
+				<tr>
+					<td colspan="2">And</td>
+				</tr>
+				<tr>
+					<td colspan="2">Handles AND statement</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">X && Y</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The first value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The second value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Logic/3.png" class = "nodeimage">
+			<table class = "table9">
+				<tr>
+					<td colspan="2">Or</td>
+				</tr>
+				<tr>
+					<td colspan="2">Handles OR statement</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">X || Y</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The first value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The second value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Logic/4.png" class = "nodeimage">
+			<table class = "table9">
+				<tr>
+					<td colspan="2">Not</td>
+				</tr>
+				<tr>
+					<td colspan="2">Handles NOT statement</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">!Value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">The input value</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n10"><h1>PPS Function</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/0.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">AnyIsNan</td>
+				</tr>
+				<tr>
+					<td colspan="2">Determines if any components of the specified value are non-zero</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/1.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">DecodeStereo</td>
+				</tr>
+				<tr>
+					<td colspan="2">Decodes normals stored in _CameraDepthNormalsTexture</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">X output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Y output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Z output value</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZ</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">X input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Y input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Z input value</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">W input value</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/2.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">FastSign</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns the sign of x</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/3.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">GradientNoise</td>
+				</tr>
+				<tr>
+					<td colspan="2">Interleaved gradient function from Jimenez 2014</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">X input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Y input value</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/4.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">IsNan</td>
+				</tr>
+				<tr>
+					<td colspan="2">Determines if the specified value is NAN</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/5.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">Linear01Depth</td>
+				</tr>
+				<tr>
+					<td colspan="2">Handles orthographic projection correctly</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/6.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">LinearEyeDepth</td>
+				</tr>
+				<tr>
+					<td colspan="2">Computes linear eye depth space from value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/7.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">Max3</td>
+				</tr>
+				<tr>
+					<td colspan="2">Selects the greatest of x, y and z</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The x input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The y input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">The z input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/8.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">Min3</td>
+				</tr>
+				<tr>
+					<td colspan="2">Selects the least of x, y and z</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The x input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The y input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">The z input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/9.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">PositivePow</td>
+				</tr>
+				<tr>
+					<td colspan="2">PositivePow remove this warning when you know the value is positive and avoid inf/NAN</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">The specified value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">The specified power</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/10.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">Rcp</td>
+				</tr>
+				<tr>
+					<td colspan="2">Returns 1.0 / value</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/11.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">SafeHDR</td>
+				</tr>
+				<tr>
+					<td colspan="2">Clamps HDR value within a safe range</td>
+				</tr>
+				<tr>
+					<td class = "left">Red</td>
+					<td class = "right">Red output</td>
+				</tr>
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Green output</td>
+				</tr>
+				<tr>
+					<td class = "left">Blue</td>
+					<td class = "right">Blue output</td>
+				</tr>
+				<tr>
+					<td class = "left">Alpha</td>
+					<td class = "right">Alpha output</td>
+				</tr>
+				<tr>
+					<td class = "left">Color</td>
+					<td class = "right">Color output</td>
+				</tr>
+				<tr>
+					<td class = "left">Red</td>
+					<td class = "right">Red input</td>
+				</tr>
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Green input</td>
+				</tr>
+				<tr>
+					<td class = "left">Blue</td>
+					<td class = "right">Blue input</td>
+				</tr>
+				<tr>
+					<td class = "left">Alpha</td>
+					<td class = "right">Alpha input</td>
+				</tr>
+				<tr>
+					<td class = "left">Color</td>
+					<td class = "right">Color input</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/PPS/12.png" class = "nodeimage">
+			<table class = "table10">
+				<tr>
+					<td colspan="2">TriangleVertToUV</td>
+				</tr>
+				<tr>
+					<td colspan="2">Vertex manipulation</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">X output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Y output value</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">X input value</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Y input value</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n11"><h1>Predefined Macro</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Predefined/0.png" class = "nodeimage">
+			<table class = "table11">
+				<tr>
+					<td colspan="2">Checker</td>
+				</tr>
+				<tr>
+					<td colspan="2">Checks if destined macro is true or false</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">True or false</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Predefined/1.png" class = "nodeimage">
+			<table class = "table11">
+				<tr>
+					<td colspan="2">NearClipValue</td>
+				</tr>
+				<tr>
+					<td colspan="2">Defined to the value of near clipping plane. Direct3D-like platforms use 0.0 while OpenGL-like platforms use –1.0</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">UNITY_NEAR_CLIP_VALUE</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Predefined/2.png" class = "nodeimage">
+			<table class = "table11">
+				<tr>
+					<td colspan="2">StartsAtTop</td>
+				</tr>
+				<tr>
+					<td colspan="2">Always defined with value of 1 or 0. A value of 1 is on platforms where Texture V coordinate is 0 at the "top" of the Texture. Direct3D-like platforms use value of 1; OpenGL-like platforms use value of 0</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">UNITY_UV_STARTS_AT_TOP</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Predefined/3.png" class = "nodeimage">
+			<table class = "table11">
+				<tr>
+					<td colspan="2">Target</td>
+				</tr>
+				<tr>
+					<td colspan="2">Defined to a numeric value that matches the Shader target compilation model</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">SHADER_TARGET</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Predefined/4.png" class = "nodeimage">
+			<table class = "table11">
+				<tr>
+					<td colspan="2">Version</td>
+				</tr>
+				<tr>
+					<td colspan="2">Contains the numeric value of the Unity version</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">UNITY_VERSION</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n12"><h1>Value</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Value/0.png" class = "nodeimage">
+			<table class = "table12">
+				<tr>
+					<td colspan="2">Value1</td>
+				</tr>
+				<tr>
+					<td colspan="2">Single index value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Value/1.png" class = "nodeimage">
+			<table class = "table12">
+				<tr>
+					<td colspan="2">Value2</td>
+				</tr>
+				<tr>
+					<td colspan="2">Double index value</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">All values</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Value/2.png" class = "nodeimage">
+			<table class = "table12">
+				<tr>
+					<td colspan="2">Value3</td>
+				</tr>
+				<tr>
+					<td colspan="2">Triple index value</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZ</td>
+					<td class = "right">All values</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Value/3.png" class = "nodeimage">
+			<table class = "table12">
+				<tr>
+					<td colspan="2">Value4</td>
+				</tr>
+				<tr>
+					<td colspan="2">Quadruple index value</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">All values</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "n13"><h1>Variable</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Nodes/Variable/0.png" class = "nodeimage">
+			<table class = "table13">
+				<tr>
+					<td colspan="2">Variable1</td>
+				</tr>
+				<tr>
+					<td colspan="2">Single index variable</td>
+				</tr>
+				<tr>
+					<td class = "left">Output</td>
+					<td class = "right">Output value</td>
+				</tr>
+				<tr>
+					<td class = "left">Value</td>
+					<td class = "right">Input value</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Variable/1.png" class = "nodeimage">
+			<table class = "table13">
+				<tr>
+					<td colspan="2">Variable2</td>
+				</tr>
+				<tr>
+					<td colspan="2">Double index variable</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">First value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Second value output</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Both values output</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">First value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Second value output</td>
+				</tr>
+				<tr>
+					<td class = "left">XY</td>
+					<td class = "right">Both value output</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Variable/2.png" class = "nodeimage">
+			<table class = "table13">
+				<tr>
+					<td colspan="2">Variable3</td>
+				</tr>
+				<tr>
+					<td colspan="2">Triple index variable</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">First value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Second value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Third value output</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZ</td>
+					<td class = "right">All values output</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">First value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Second value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Third value output</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZ</td>
+					<td class = "right">All value output</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "node">
+			<img src = "images/Nodes/Variable/3.png" class = "nodeimage">
+			<table class = "table13">
+				<tr>
+					<td colspan="2">Variable4</td>
+				</tr>
+				<tr>
+					<td colspan="2">Quadruple index variable</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">First value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Second value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Third value output</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Fourth value output</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">All values output</td>
+				</tr>
+				<tr>
+					<td class = "left">X Value</td>
+					<td class = "right">First value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Y Value</td>
+					<td class = "right">Second value output</td>
+				</tr>
+				<tr>
+					<td class = "left">Z Value</td>
+					<td class = "right">Third value output</td>
+				</tr>
+				<tr>
+					<td class = "left">W Value</td>
+					<td class = "right">Fourth value output</td>
+				</tr>
+				<tr>
+					<td class = "left">XYZW</td>
+					<td class = "right">All value output</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class = "footer">
+		<a href = "https://assetstore.unity.com/publishers/25212"><img src = "images/bottom.png" class = "footerbanner"></a>
+		<hr>
+		<label class = "support">Support: </label><a href = "mailto:assetstore.ntec@gmail.com" class = "fa">assetstore.ntec@gmail.com</a>
+		<br>
+		<label class = "support">&copy; Dawid Moza</label>
+	</div>
+</body>

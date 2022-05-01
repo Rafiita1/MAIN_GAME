@@ -1,0 +1,1247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: All FX
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: 114925687163807060}
+  - {fileID: 114165856886343056}
+  - {fileID: 114098424951248022}
+  - {fileID: 114113653141736074}
+  - {fileID: 114967098577049546}
+  - {fileID: 114352639085635642}
+  - {fileID: 114490386289197548}
+  - {fileID: 114719576752128438}
+  - {fileID: 114137171287782932}
+  - {fileID: 114877246908427916}
+  - {fileID: 114317563846510496}
+  - {fileID: 114005796905230666}
+  - {fileID: 114980186868454700}
+  - {fileID: 114422309727701498}
+  - {fileID: 114859174212991004}
+  - {fileID: 114643517677834788}
+  - {fileID: 114732817252844364}
+  - {fileID: 114924526981335022}
+  - {fileID: 114091676335774406}
+  - {fileID: 114900906591474046}
+  - {fileID: 114071856819766674}
+  - {fileID: 114241347949732754}
+  - {fileID: 114551776691239378}
+  - {fileID: 114395500228605574}
+  - {fileID: 114257135420816662}
+  - {fileID: 114614794745947874}
+  - {fileID: 114252876928706724}
+  - {fileID: 114164096210392946}
+  - {fileID: 114014724243246812}
+  - {fileID: 114847503540442990}
+  - {fileID: 114113439198769512}
+  - {fileID: 114613992926825730}
+  - {fileID: 114586980915759988}
+--- !u!114 &114005796905230666
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3311c67f867b342a9acf231b79d26a, type: 3}
+  m_Name: Frame
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Horizontal:
+    overrideState: 0
+    value: 0.5
+  Vertical:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114014724243246812
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1e1d90257922544ac9b4614e3e0b17, type: 3}
+  m_Name: SelectColor
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.7
+  Selected:
+    overrideState: 0
+    value: {r: 1, g: 0, b: 0, a: 0}
+--- !u!114 &114071856819766674
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d05ad9eed61f744c8ed1b2e042646f2, type: 3}
+  m_Name: OldFilm
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Noise:
+    overrideState: 0
+    value: 0.5
+  Oscillation:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114091676335774406
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cac0f8028a982d40abf9f23d3d3f722, type: 3}
+  m_Name: Noctovision
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Green:
+    overrideState: 0
+    value: 0.75
+  Noise:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114098424951248022
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed85121b63a2ed4c97e1ffe4182114c, type: 3}
+  m_Name: ColorCurves
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  RedEVALUATION: {fileID: 0}
+  Red:
+    overrideState: 1
+    value:
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 0.7852564
+          value: 0.57067305
+          inSlope: 1.7358497
+          outSlope: 1.7358497
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      m_Loop: 0
+      m_ZeroValue: 0
+      m_Range: 1
+      cachedData:
+      - 0
+      - 0.007692577
+      - 0.015149274
+      - 0.022376042
+      - 0.029378831
+      - 0.036163587
+      - 0.04273627
+      - 0.049102817
+      - 0.05526919
+      - 0.06124133
+      - 0.06702519
+      - 0.07262672
+      - 0.078051865
+      - 0.083306596
+      - 0.08839683
+      - 0.09332854
+      - 0.09810768
+      - 0.102740176
+      - 0.107232004
+      - 0.11158909
+      - 0.115817405
+      - 0.11992289
+      - 0.12391149
+      - 0.12778917
+      - 0.13156186
+      - 0.13523552
+      - 0.13881609
+      - 0.14230955
+      - 0.14572184
+      - 0.14905886
+      - 0.15232663
+      - 0.15553106
+      - 0.15867811
+      - 0.16177373
+      - 0.16482389
+      - 0.16783449
+      - 0.17081152
+      - 0.17376092
+      - 0.17668864
+      - 0.17960063
+      - 0.18250284
+      - 0.18540122
+      - 0.1883017
+      - 0.19121027
+      - 0.19413288
+      - 0.19707543
+      - 0.20004392
+      - 0.20304427
+      - 0.20608243
+      - 0.20916435
+      - 0.21229601
+      - 0.21548335
+      - 0.21873228
+      - 0.22204882
+      - 0.22543883
+      - 0.22890833
+      - 0.23246324
+      - 0.23610952
+      - 0.23985314
+      - 0.24370001
+      - 0.24765612
+      - 0.25172737
+      - 0.25591978
+      - 0.26023924
+      - 0.2646917
+      - 0.26928318
+      - 0.2740195
+      - 0.27890676
+      - 0.28395078
+      - 0.28915763
+      - 0.29453316
+      - 0.30008337
+      - 0.3058142
+      - 0.31173158
+      - 0.3178415
+      - 0.32414985
+      - 0.33066273
+      - 0.33738586
+      - 0.3443254
+      - 0.35148713
+      - 0.35887712
+      - 0.36650124
+      - 0.37436548
+      - 0.3824758
+      - 0.39083818
+      - 0.39945856
+      - 0.40834275
+      - 0.41749686
+      - 0.4269268
+      - 0.43663844
+      - 0.44663787
+      - 0.45693094
+      - 0.4675237
+      - 0.478422
+      - 0.48963177
+      - 0.501159
+      - 0.51300967
+      - 0.5251897
+      - 0.53770506
+      - 0.55056167
+      - 0.5637655
+      - 0.5773813
+      - 0.5917576
+      - 0.60688484
+      - 0.6226847
+      - 0.6390789
+      - 0.65598905
+      - 0.67333686
+      - 0.691044
+      - 0.70903206
+      - 0.72722274
+      - 0.7455377
+      - 0.7638986
+      - 0.78222716
+      - 0.80044496
+      - 0.81847376
+      - 0.83623517
+      - 0.85365075
+      - 0.8706423
+      - 0.88713145
+      - 0.9030398
+      - 0.9182892
+      - 0.9328011
+      - 0.9464972
+      - 0.9592993
+      - 0.97112894
+      - 0.98190784
+      - 0.9915576
+  GreenEVALUATION: {fileID: 0}
+  Green:
+    overrideState: 1
+    value:
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 0.5198718
+          value: 0.5802884
+          inSlope: 1.0001659
+          outSlope: 1.0001659
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      m_Loop: 0
+      m_ZeroValue: 0
+      m_Range: 1
+      cachedData:
+      - 0
+      - 0.007853003
+      - 0.015785372
+      - 0.023794651
+      - 0.03187838
+      - 0.040034097
+      - 0.048259344
+      - 0.05655167
+      - 0.06490861
+      - 0.0733277
+      - 0.08180649
+      - 0.09034252
+      - 0.098933324
+      - 0.10757646
+      - 0.11626944
+      - 0.12500983
+      - 0.13379519
+      - 0.142623
+      - 0.15149087
+      - 0.16039628
+      - 0.16933681
+      - 0.17830999
+      - 0.18731338
+      - 0.19634447
+      - 0.20540085
+      - 0.21448004
+      - 0.22357962
+      - 0.23269707
+      - 0.24182998
+      - 0.25097585
+      - 0.26013225
+      - 0.2692967
+      - 0.27846676
+      - 0.28764
+      - 0.29681388
+      - 0.30598605
+      - 0.31515393
+      - 0.32431513
+      - 0.33346722
+      - 0.34260768
+      - 0.3517341
+      - 0.36084396
+      - 0.36993483
+      - 0.37900427
+      - 0.38804984
+      - 0.39706904
+      - 0.40605938
+      - 0.41501847
+      - 0.42394388
+      - 0.43283305
+      - 0.44168356
+      - 0.45049295
+      - 0.45925882
+      - 0.46797863
+      - 0.47664994
+      - 0.48527032
+      - 0.4938373
+      - 0.5023484
+      - 0.51080126
+      - 0.51919323
+      - 0.527522
+      - 0.5357851
+      - 0.54398
+      - 0.5521043
+      - 0.5601555
+      - 0.5681312
+      - 0.5760289
+      - 0.5838448
+      - 0.59156823
+      - 0.59920025
+      - 0.6067438
+      - 0.61420214
+      - 0.62157834
+      - 0.6288755
+      - 0.63609684
+      - 0.64324534
+      - 0.6503242
+      - 0.65733665
+      - 0.66428566
+      - 0.67117447
+      - 0.6780061
+      - 0.6847837
+      - 0.69151044
+      - 0.6981895
+      - 0.70482385
+      - 0.7114167
+      - 0.7179712
+      - 0.72449046
+      - 0.73097754
+      - 0.7374357
+      - 0.7438679
+      - 0.7502774
+      - 0.75666726
+      - 0.76304066
+      - 0.76940066
+      - 0.7757504
+      - 0.78209305
+      - 0.78843164
+      - 0.7947694
+      - 0.80110943
+      - 0.8074548
+      - 0.81380874
+      - 0.8201742
+      - 0.82655454
+      - 0.83295274
+      - 0.8393719
+      - 0.8458152
+      - 0.85228574
+      - 0.8587867
+      - 0.8653212
+      - 0.87189233
+      - 0.8785032
+      - 0.8851569
+      - 0.8918567
+      - 0.8986056
+      - 0.9054067
+      - 0.9122633
+      - 0.91917837
+      - 0.9261551
+      - 0.93319654
+      - 0.94030595
+      - 0.9474863
+      - 0.9547408
+      - 0.9620726
+      - 0.9694848
+      - 0.97698045
+      - 0.9845629
+      - 0.99223495
+  BlueEVALUATION: {fileID: 0}
+  Blue:
+    overrideState: 0
+    value:
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_Loop: 0
+      m_ZeroValue: 0
+      m_Range: 1
+      cachedData:
+      - 0
+      - 0.0078125
+      - 0.015625
+      - 0.0234375
+      - 0.03125
+      - 0.0390625
+      - 0.046875
+      - 0.0546875
+      - 0.0625
+      - 0.0703125
+      - 0.078125
+      - 0.0859375
+      - 0.09375
+      - 0.1015625
+      - 0.109375
+      - 0.1171875
+      - 0.125
+      - 0.1328125
+      - 0.140625
+      - 0.1484375
+      - 0.15625
+      - 0.1640625
+      - 0.171875
+      - 0.1796875
+      - 0.1875
+      - 0.1953125
+      - 0.203125
+      - 0.2109375
+      - 0.21875
+      - 0.2265625
+      - 0.234375
+      - 0.2421875
+      - 0.25
+      - 0.2578125
+      - 0.265625
+      - 0.2734375
+      - 0.28125
+      - 0.2890625
+      - 0.296875
+      - 0.3046875
+      - 0.3125
+      - 0.3203125
+      - 0.328125
+      - 0.3359375
+      - 0.34375
+      - 0.3515625
+      - 0.359375
+      - 0.3671875
+      - 0.375
+      - 0.3828125
+      - 0.390625
+      - 0.3984375
+      - 0.40625
+      - 0.4140625
+      - 0.421875
+      - 0.4296875
+      - 0.4375
+      - 0.4453125
+      - 0.453125
+      - 0.4609375
+      - 0.46875
+      - 0.4765625
+      - 0.484375
+      - 0.4921875
+      - 0.5
+      - 0.5078125
+      - 0.515625
+      - 0.5234375
+      - 0.53125
+      - 0.5390625
+      - 0.546875
+      - 0.5546875
+      - 0.5625
+      - 0.5703125
+      - 0.578125
+      - 0.5859375
+      - 0.59375
+      - 0.6015625
+      - 0.609375
+      - 0.6171875
+      - 0.625
+      - 0.6328125
+      - 0.640625
+      - 0.6484375
+      - 0.65625
+      - 0.6640625
+      - 0.671875
+      - 0.6796875
+      - 0.6875
+      - 0.6953125
+      - 0.703125
+      - 0.7109375
+      - 0.71875
+      - 0.7265625
+      - 0.734375
+      - 0.7421875
+      - 0.75
+      - 0.7578125
+      - 0.765625
+      - 0.7734375
+      - 0.78125
+      - 0.7890625
+      - 0.796875
+      - 0.8046875
+      - 0.8125
+      - 0.8203125
+      - 0.828125
+      - 0.8359375
+      - 0.84375
+      - 0.8515625
+      - 0.859375
+      - 0.8671875
+      - 0.875
+      - 0.8828125
+      - 0.890625
+      - 0.8984375
+      - 0.90625
+      - 0.9140625
+      - 0.921875
+      - 0.9296875
+      - 0.9375
+      - 0.9453125
+      - 0.953125
+      - 0.9609375
+      - 0.96875
+      - 0.9765625
+      - 0.984375
+      - 0.9921875
+  Tint:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 0}
+--- !u!114 &114113439198769512
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98f33bcca262514887675d1e9bfbde9, type: 3}
+  m_Name: Sharpen
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114113653141736074
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3318af5ca29ac554697009529a9ee410, type: 3}
+  m_Name: CrossedEyes
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Shift:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114137171287782932
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0abfb95ee72f604da41a9f9a7052225, type: 3}
+  m_Name: EightColors2
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Start:
+    overrideState: 0
+    value: {r: 0, g: 0, b: 0, a: 0}
+  OneEighth:
+    overrideState: 0
+    value: {r: 0.1215686, g: 0.1215686, b: 0.1215686, a: 0}
+  TwoEights:
+    overrideState: 0
+    value: {r: 0.2470588, g: 0.2470588, b: 0.2470588, a: 0}
+  ThreeEights:
+    overrideState: 0
+    value: {r: 0.372549, g: 0.372549, b: 0.372549, a: 0}
+  FourEights:
+    overrideState: 0
+    value: {r: 0.4980392, g: 0.4980392, b: 0.4980392, a: 0}
+  FiveEights:
+    overrideState: 0
+    value: {r: 0.6235294, g: 0.6235294, b: 0.6235294, a: 0}
+  SixEights:
+    overrideState: 0
+    value: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 0}
+  SevenEights:
+    overrideState: 0
+    value: {r: 0.8745098, g: 0.8745098, b: 0.8745098, a: 0}
+  Full:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 0}
+--- !u!114 &114164096210392946
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba62775f32999ec428dd7c12b8c0c0b6, type: 3}
+  m_Name: ScreenSpaceShadows
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0
+  Power:
+    overrideState: 0
+    value: 2
+--- !u!114 &114165856886343056
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d250c9981a46e504e9bd2f625016c195, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Iterations:
+    overrideState: 0
+    value: 1
+  Offset:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114241347949732754
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fd1ec43bbff9845b1de333b45ec8fb, type: 3}
+  m_Name: Overlay
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 1
+    value: 1
+  Image:
+    overrideState: 1
+    value: {fileID: 2800000, guid: 5104005ee25c3414cbea57257385ddcc, type: 3}
+    defaultState: 1
+--- !u!114 &114252876928706724
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fda259705af0b34e976b2d14dd47c4d, type: 3}
+  m_Name: ScanLines
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.5
+  Width:
+    overrideState: 1
+    value: 1
+  Gap:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114257135420816662
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726eeb48bddc37b4cbea99cd61e04b09, type: 3}
+  m_Name: RadialBlur
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Iterations:
+    overrideState: 0
+    value: 4
+  Intensity:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114317563846510496
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2dd08add578514b94a6f2d9d85a0da, type: 3}
+  m_Name: Fog
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Color:
+    overrideState: 0
+    value: {r: 0.7843137, g: 0.7843137, b: 0.7843137, a: 0.7843137}
+  Intensity:
+    overrideState: 0
+    value: 0.5
+  Distance:
+    overrideState: 0
+    value: 1
+  Height:
+    overrideState: 0
+    value: 3
+--- !u!114 &114352639085635642
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838e3a4fc58b372408a49c689ac50e8e, type: 3}
+  m_Name: Drunk
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Horizontal:
+    overrideState: 0
+    value: 1
+  Vertical:
+    overrideState: 0
+    value: 1
+  Speed:
+    overrideState: 0
+    value: 1
+--- !u!114 &114395500228605574
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724a2e6cba1189f4084d4abb26854bfe, type: 3}
+  m_Name: Posterize
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Colors:
+    overrideState: 0
+    value: 8
+--- !u!114 &114422309727701498
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d962b0f69cd30a14198bba88a820275d, type: 3}
+  m_Name: Glitch2
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.3
+  Speed:
+    overrideState: 0
+    value: 1
+  Saturation:
+    overrideState: 0
+    value: 0.5
+  Lines:
+    overrideState: 0
+    value: 128
+--- !u!114 &114490386289197548
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1572bdf640b0fc4b8864dcb2826a3ba, type: 3}
+  m_Name: EdgeDetection
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Edge:
+    overrideState: 1
+    value: 1
+--- !u!114 &114551776691239378
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9d58034bfc804e9a735e8eb9f049e, type: 3}
+  m_Name: Pixelize
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Horizontal:
+    overrideState: 1
+    value: 64
+  Vertical:
+    overrideState: 1
+    value: 64
+--- !u!114 &114586980915759988
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61ca37b9e4604024092151dbd2d515dc, type: 3}
+  m_Name: Threshold
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 1
+    value: 1
+  Level:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114613992926825730
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f94201d7ac2104ebc4b924b973c5d2, type: 3}
+  m_Name: Splatter
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 1
+    value: 0.5
+  Image:
+    overrideState: 1
+    value: {fileID: 2800000, guid: 4534b2872cff71b47a6acdeaa40625e2, type: 3}
+    defaultState: 1
+--- !u!114 &114614794745947874
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877a66e52d86b6b48b3a4510219ce73c, type: 3}
+  m_Name: RadialBlur2
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.3
+--- !u!114 &114643517677834788
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 344cf334f330c4546923f3aa38597fdc, type: 3}
+  m_Name: IndustrialCamera
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.5
+  Lines:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114719576752128438
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00b12431b8a9534aa9c863fb92ab51b, type: 3}
+  m_Name: EightColors
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  OneEighth:
+    overrideState: 0
+    value: {r: 0.1215686, g: 0.1215686, b: 0.1215686, a: 0}
+  TwoEights:
+    overrideState: 0
+    value: {r: 0.2470588, g: 0.2470588, b: 0.2470588, a: 0}
+  ThreeEights:
+    overrideState: 0
+    value: {r: 0.372549, g: 0.372549, b: 0.372549, a: 0}
+  FourEights:
+    overrideState: 0
+    value: {r: 0.4980392, g: 0.4980392, b: 0.4980392, a: 0}
+  FiveEights:
+    overrideState: 0
+    value: {r: 0.6235294, g: 0.6235294, b: 0.6235294, a: 0}
+  SixEights:
+    overrideState: 0
+    value: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 0}
+  SevenEights:
+    overrideState: 0
+    value: {r: 0.8745098, g: 0.8745098, b: 0.8745098, a: 0}
+  Full:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 0}
+--- !u!114 &114732817252844364
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fff348879ffc343b4f790bb73a7dfd, type: 3}
+  m_Name: Infrared
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.3
+--- !u!114 &114847503540442990
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c60915a769032d4ba17aa5dfe6f08b1, type: 3}
+  m_Name: Sepia
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Color:
+    overrideState: 0
+    value: {r: 0.6745098, g: 0.4784314, b: 0.2, a: 0}
+--- !u!114 &114859174212991004
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2aa773d888d50a4d8b77207bfc4db66, type: 3}
+  m_Name: HorizontalBloom
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.5
+  Threshold:
+    overrideState: 0
+    value: 0.9
+  Quality:
+    overrideState: 0
+    value: 1
+--- !u!114 &114877246908427916
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5cd1e17e3c1e3646884302858adf8ea, type: 3}
+  m_Name: Fade
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.9987482
+--- !u!114 &114900906591474046
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d864d88569d37644f9381f070e40b856, type: 3}
+  m_Name: Noise
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.5
+  Saturation:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114924526981335022
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34fd95c936dbf68429fb8ffdd7846bed, type: 3}
+  m_Name: Invert
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 1
+--- !u!114 &114925687163807060
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10f18e68d69a9d4f9cf1493d47644ab, type: 3}
+  m_Name: Blur
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  Iterations:
+    overrideState: 0
+    value: 4
+  Intensity:
+    overrideState: 0
+    value: 0.5
+--- !u!114 &114967098577049546
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b699b1cd0198c842b6a41002307c6a4, type: 3}
+  m_Name: Distortion
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 0
+    value: 0.5
+  Coords:
+    overrideState: 1
+    value: {fileID: 2800000, guid: eab3231b41515434bb3676c12e4165a9, type: 3}
+    defaultState: 1
+--- !u!114 &114980186868454700
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5866eec259e50940a6bcee2ff03d46c, type: 3}
+  m_Name: Glitch
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  Speed:
+    overrideState: 0
+    value: 0.5
+  Size:
+    overrideState: 0
+    value: 0.3

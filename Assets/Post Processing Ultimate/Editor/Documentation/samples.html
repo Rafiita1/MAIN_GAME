@@ -1,0 +1,974 @@
+<head>
+	<title>Post Processing Ultimate</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<link rel = "icon" type = "image/png" href = "images/icon.png">
+	<meta name = "viewport" content = "width = device-height, initial-scale = 0.5">
+</head>
+<body>
+	<div class = "header">
+		<a href = "index.html"><img src = "images/top.png" class = "banner"></a>
+		<hr>
+		<a href = "https://www.assetstore.unity3d.com/#!/content/104053" class = "ta">Asset Store</a>
+		<a href = "index.html" class = "ta">How to start</a>
+		<a href = "https://forum.unity.com/threads/post-processing-ultimate-post-processing-stack-v2-visual-scripting-custom-effects-editor.521398/" class = "ta">Forum</a>
+		<a href = "samples.html" class = "ta">Effects</a>
+		<a href = "nodes.html" class = "ta">Nodes</a>
+		<a href = "tutorials.html" class = "ta">Tutorials</a>
+	</div>
+	<div class = "navigation">
+		<ol>
+			<li><a href = "#blur" class = "na">Blur</a></li>
+			<li><a href = "#ca" class = "na">Chromatic Abberation</a></li>
+			<li><a href = "#cc" class = "na">Color Curves</a></li>
+			<li><a href = "#ce" class = "na">Crossed Eyes</a></li>
+			<li><a href = "#dis" class = "na">Distortion</a></li>
+			<li><a href = "#dru" class = "na">Drunk</a></li>
+			<li><a href = "#ed" class = "na">Edge Detection</a></li>
+			<li><a href = "#ec" class = "na">Eight Colors</a></li>
+			<li><a href = "#ec2" class = "na">Eight Colors 2</a></li>
+			<li><a href = "#fd" class = "na">Fade</a></li>
+			<li><a href = "#fog" class = "na">Fog</a></li>
+			<li><a href = "#fra" class = "na">Frame</a></li>
+			<li><a href = "#gli" class = "na">Glitch</a></li>
+			<li><a href = "#gli2" class = "na">Glitch 2</a></li>
+			<li><a href = "#hbloom" class = "na">Horizontal Bloom</a></li>
+			<li><a href = "#ic" class = "na">Industrial Camera</a></li>
+			<li><a href = "#ir" class = "na">Infrared</a></li>
+			<li><a href = "#inv" class = "na">Invert</a></li>
+			<li><a href = "#noc" class = "na">Noctovision</a></li>
+			<li><a href = "#noi" class = "na">Noise</a></li>
+			<li><a href = "#of" class = "na">Old Film</a></li>
+			<li><a href = "#over" class = "na">Overlay</a></li>
+			<li><a href = "#pix" class = "na">Pixelize</a></li>
+			<li><a href = "#pos" class = "na">Posterize</a></li>
+			<li><a href = "#rb" class = "na">Radial Blur</a></li>
+			<li><a href = "#rb2" class = "na">Radial Blur 2</a></li>
+			<li><a href = "#sl" class = "na">Scan Lines</a></li>
+			<li><a href = "#sss" class = "na">Screen Space Shadows</a></li>
+			<li><a href = "#sc" class = "na">Select Color</a></li>
+			<li><a href = "#sep" class = "na">Sepia</a></li>
+			<li><a href = "#sharp" class = "na">Sharpen</a></li>
+			<li><a href = "#splat" class = "na">Splatter</a></li>
+			<li><a href = "#thres" class = "na">Threshold</a></li>
+		</ol>
+	</div>
+	<div class = "content">
+		<a name = "blur"><h1>Blur</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/blur.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Great for 'Game Over' screens!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect Intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Iterations</td>
+					<td class = "right">Effect Iterations</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "ca"><h1>Chromatic Abberation</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/ca.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Use it for retro style!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Iterations</td>
+					<td class = "right">Effect Iterations</td>
+				</tr>
+				<tr>
+					<td class = "left">Offset</td>
+					<td class = "right">Channels offset</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "cc"><h1>Color Curves</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/cc.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Adjust colors using precise spline curves!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Red</td>
+					<td class = "right">Red channel curve</td>
+				</tr>
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Green channel curve</td>
+				</tr>
+				<tr>
+					<td class = "left">Blue</td>
+					<td class = "right">Blue channel curve</td>
+				</tr>
+				<tr>
+					<td class = "left">Tint</td>
+					<td class = "right">Image filter</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "ce"><h1>Crossed Eyes</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/ce.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Seeing two dispersed images at once!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Shift</td>
+					<td class = "right">Horizontal shift</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "dis"><h1>Distortion</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/dis.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Modyfing image using custom made textures!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Coords</td>
+					<td class = "right">New coords</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "dru"><h1>Drunk</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/dru.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Must-have for every sandbox game!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Horizontal</td>
+					<td class = "right">Horizontal wobble</td>
+				</tr>
+				<tr>
+					<td class = "left">Vertical</td>
+					<td class = "right">Vertical wobble</td>
+				</tr>
+				<tr>
+					<td class = "left">Speed</td>
+					<td class = "right">Animation speed</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "ed"><h1>Edge Detection</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/ed.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Useful in many other shaders such as anti-aliasing!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Edge</td>
+					<td class = "right">Edge offset</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "ec"><h1>Eight Colors</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/ec.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Whole game in only 8 colors!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">One Eigth</td>
+					<td class = "right">0.000 to 0.125 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Two Eigths</td>
+					<td class = "right">0.125 to 0.250 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Three Eigths</td>
+					<td class = "right">0.250 to 0.375 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Four Eigths</td>
+					<td class = "right">0.375 to 0.500 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Five Eigths</td>
+					<td class = "right">0.500 to 0.625 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Six Eigths</td>
+					<td class = "right">0.625 to 0.750 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Seven Eigths</td>
+					<td class = "right">0.750 to 0.875 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Full</td>
+					<td class = "right">0.875 to 1.000 luminosity</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "ec2"><h1>Eight Colors 2</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/ec2.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Whole game in only 8 blended colors!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Start</td>
+					<td class = "right">Base color</td>
+				</tr>
+				<tr>
+					<td class = "left">One Eigth</td>
+					<td class = "right">0.000 to 0.125 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Two Eigths</td>
+					<td class = "right">0.125 to 0.250 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Three Eigths</td>
+					<td class = "right">0.250 to 0.375 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Four Eigths</td>
+					<td class = "right">0.375 to 0.500 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Five Eigths</td>
+					<td class = "right">0.500 to 0.625 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Six Eigths</td>
+					<td class = "right">0.625 to 0.750 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Seven Eigths</td>
+					<td class = "right">0.750 to 0.875 luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Full</td>
+					<td class = "right">0.875 to 1.000 luminosity</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "fd"><h1>Fade</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/fd.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>With useful tutorial script!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "fog"><h1>Fog</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/fog.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Add mysterious atmosphere to Your game!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Color</td>
+					<td class = "right">Fog color</td>
+				</tr>
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect Intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Distance</td>
+					<td class = "right">Distance at which fog should appear</td>
+				</tr>
+				<tr>
+					<td class = "left">Height</td>
+					<td class = "right">Fog height</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "fra"><h1>Frame</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/fra.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Easily change aspect ratio by adding black bars!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Horizontal</td>
+					<td class = "right">Horizontal frame</td>
+				</tr>
+				<tr>
+					<td class = "left">Vertical</td>
+					<td class = "right">Vertical frame</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "gli"><h1>Glitch</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/gli.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Magenta blinking square all over the screen!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Speed</td>
+					<td class = "right">Animation speed</td>
+				</tr>
+				<tr>
+					<td class = "left">Size</td>
+					<td class = "right">Bug size</td>
+				</tr>
+			</table>
+		</div>
+				<a name = "gli2"><h1>Glitch 2</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/gli2.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Noise and shifting lines!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Speed</td>
+					<td class = "right">Animation speed</td>
+				</tr>
+				<tr>
+					<td class = "left">Saturation</td>
+					<td class = "right">Glitch saturation</td>
+				</tr>
+				<tr>
+					<td class = "left">Lines</td>
+					<td class = "right">Number of lines</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "hbloom"><h1>Horizontal Bloom</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/hblur.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Nice and futuristic!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Threshold</td>
+					<td class = "right">Minimum luminosity</td>
+				</tr>
+				<tr>
+					<td class = "left">Quality</td>
+					<td class = "right">Number of blur iterations</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "ic"><h1>Industrial Camera</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/ic.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Great for spying game!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect Intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Lines</td>
+					<td class = "right">Lines visibility</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "ir"><h1>Infrared</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/ir.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Bright is red!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "inv"><h1>Invert</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/inv.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Black is white!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "noc"><h1>Noctovision</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/noc.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Greyscale, but greenish and with higher contrast!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Green</td>
+					<td class = "right">Green intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Noise</td>
+					<td class = "right">Noise Intensity</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "noi"><h1>Noise</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/noi.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Colorful or grey!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Saturation</td>
+					<td class = "right">Noise saturation</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "of"><h1>Old Film</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/of.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Ideal for a retrospection scene!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Noise</td>
+					<td class = "right">Noise Intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Oscillation</td>
+					<td class = "right">Oscillation amplitude</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "over"><h1>Overlay</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/over.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Could be useful for jump scares!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Image</td>
+					<td class = "right">Overlay texture</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "pix"><h1>Pixelize</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/pix.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Simulate a game from 8-bit era!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Horizontal</td>
+					<td class = "right">Horizontal resolution</td>
+				</tr>
+				<tr>
+					<td class = "left">Vertical</td>
+					<td class = "right">Vertical resolution</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "pos"><h1>Posterize</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/pos.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Reduces amount of colors, works great with pixelize!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Colors</td>
+					<td class = "right">Number of colors in each channel</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "rb"><h1>Radial Blur</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/rb.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Blur with linear from center to corners intensity!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Iterations</td>
+					<td class = "right">Effect iterations</td>
+				</tr>
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect Intensity</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "rb2"><h1>Radial Blur 2</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/rb2.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Pixels averaged by other pixels in specific direction!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect Intensity</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "sl"><h1>Scan Lines</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/sl.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Like an old TV screen on a video tape!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Width</td>
+					<td class = "right">Line width</td>
+				</tr>
+				<tr>
+					<td class = "left">Gap</td>
+					<td class = "right">Gap between lines</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "sss"><h1>Screen Space Shadows</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/sss.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Add some nice shadows!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Power</td>
+					<td class = "right">Effect power</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "sc"><h1>Select Color</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/sc.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>One color to rule all the greyscale!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Selected</td>
+					<td class = "right">Selected color</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "sep"><h1>Sepia</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/sep.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Classic retrospection scenes!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Color</td>
+					<td class = "right">Sepia color</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "sharp"><h1>Sharpen</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/sharp.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Make it razor sharp!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect Intensity</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "splat"><h1>Splatter</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/splat.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Overlay with from center to corners intensity!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Image</td>
+					<td class = "right">Situation texture</td>
+				</tr>
+			</table>
+		</div>
+		<a name = "thres"><h1>Threshold</h1></a>
+		<hr>
+		<div class = "node">
+			<div class = "image-slider">
+				<div><img src = "images/Samples/a00.png"/></div>
+				<img src = "images/Samples/thres.png"/>
+			</div>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>Black or white!</td>
+				</tr>
+			</table>
+			<br>
+			<table class = "table6">
+				<tr>
+					<td class = "left">Intensity</td>
+					<td class = "right">Effect Intensity</td>
+				</tr>
+				<tr>
+					<td class = "left">Level</td>
+					<td class = "right">Threshold level</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class = "footer">
+		<a href = "https://assetstore.unity.com/publishers/25212"><img src = "images/bottom.png" class = "footerbanner"></a>
+		<hr>
+		<label class = "support">Support: </label><a href = "mailto:assetstore.ntec@gmail.com" class = "fa">assetstore.ntec@gmail.com</a>
+		<br>
+		<label class = "support">&copy; Dawid Moza</label>
+	</div>
+</body>

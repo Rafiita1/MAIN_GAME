@@ -1,0 +1,168 @@
+<head>
+	<title>Post Processing Ultimate</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<link rel = "icon" type = "image/png" href = "images/icon.png">
+	<meta name = "viewport" content = "width = device-height, initial-scale = 0.5">
+</head>
+<body>
+	<div class = "header">
+		<a href = "index.html"><img src = "images/top.png" class = "banner"></a>
+		<hr>
+		<a href = "https://www.assetstore.unity3d.com/#!/content/104053" class = "ta">Asset Store</a>
+		<a href = "index.html" class = "ta">How to start</a>
+		<a href = "https://forum.unity.com/threads/post-processing-ultimate-post-processing-stack-v2-visual-scripting-custom-effects-editor.521398/" class = "ta">Forum</a>
+		<a href = "samples.html" class = "ta">Effects</a>
+		<a href = "nodes.html" class = "ta">Nodes</a>
+		<a href = "tutorials.html" class = "ta">Tutorials</a>
+	</div>
+	<div class = "navigation">
+		<ol>
+			<li><a href = "#bk" class = "na">Basic Knowledge</a></li>
+			<li><a href = "#an" class = "na">Animations</a></li>
+			<li><a href = "#de" class = "na">Depth</a></li>
+			<li><a href = "#rq" class = "na">Render Queue</a></li>
+			<li><a href = "#gv" class = "na">Global Variable</a></li>
+			<li><a href = "#vr" class = "na">VR</a></li>
+			<li><a href = "#fu" class = "na">Functions</a></li>
+			<li><a href = "#lg" class = "na">Logic</a></li>
+			<li><a href = "#pm" class = "na">Predefined Macros</a></li>
+			<li><a href = "#lv" class = "na">Local Variables</a></li>
+			<li><a href = "#pi" class = "na">Picker</a></li>
+			<li><a href = "#bl" class = "na">Blender</a></li>
+			<li><a href = "#lo" class = "na">Loops</a></li>
+		</ol>
+	</div>
+	<div class = "content">
+		<a name = "bk"><h1>Basic Knowledge</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/0a.png" class = "wide">
+			<p>- Post Processing shader is a program that filters every single screen pixel</p>
+			<p>- Every pixel contains 3 subpixels - Red, Green and Blue</p>
+			<p>- Subpixel illuminates differently depending on its value (0 to 1 range)</p>
+			<img src = "images/Tutorials/0b.png" class = "wide">
+			<p>Screen pixel (CameraOutput) comes from game (CameraInput) which is mapped by texture coords (DefaultUV)</p>
+			<img src = "images/Tutorials/0c.png" class = "wide">
+			<p>Texture coords - DefaultUV output</p>
+		</div>
+		<a name = "an"><h1>Animations</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/1b.png" class = "wide">
+			<p>- Animations are created by using Time data, it's also very handy to use built-in SinTime</p>
+		</div>
+		<a name = "de"><h1>Depth</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/2a.png" class = "wide">
+			<p>Depth is easy, just replace CameraInput with CameraDepth</p>
+		</div>
+		<div class = "tip">
+			<p>Pro Tip!</p>
+			<p>In most cases, mobile devices don't support depth</p>
+		</div>
+		<a name = "rq"><h1>Render Queue</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/3a.png" class = "wide">
+			<p>- PPU supports multi-pass, what means that You can store multiple programs in one shader file</p>
+			<p>- Create temp textures to handle passing data between render passes</p>
+			<p>- Select input and output textures for each render pass, set shader pass and iterations using fixed value or global variable (Int or IntSlider)</p>
+			<h3>Reusing passes</h3>
+			<p>- Render effect into tempRT using RenderQueue</p>
+			<p>- Add TempTex node and select destined tempRT to reuse</p>
+		</div>
+		<p><a href = "index.html#n23" class = "ca">More Information...</a></p>
+		<a name = "gv"><h1>Global Variable</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/4a.png" class = "wide">
+			<p>- Add new property in the left panel</p>
+			<p>- Create new Input node suitable to data type and assign variable by name</p>
+		</div>
+		<div class = "tip">
+			<p>Pro Tip!</p>
+			<p>It's important to care about unique properties naming!</p>
+		</div>
+		<div class = "node">
+			<img src = "images/Tutorials/4b.png" class = "wide">
+			<p>- Create Spline in the same way as normal property</p>
+			<p>- _Spline node returns a value of a curve in a given position of X axis</p>
+		</div>
+		<p><a href = "index.html#n24" class = "ca">More Information...</a></p>
+		<a name = "vr"><h1>VR</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/5a.png" class = "wide">
+			<p>VR for single-pass rendering is simple, just replace DefaultUV with StereoUV</p>
+		</div>
+		<a name = "fu"><h1>Functions</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/6a.png" class = "wide">
+			<p>- Open Function Editor, create Your function</p>
+			<p>- Open Shader Editor, create Custom node and select created function</p>
+		</div>
+		<p><a href = "index.html#n4" class = "ca">More Information...</a></p>
+		<a name = "lg"><h1>Logic</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/7a.png" class = "wide">
+			<p>- Logic output is represented by true (1) or false (0)</p>
+			<p>- Every value different than 1 is treated as false</p>
+			<p>- AND returns true when both inputs are true</p>
+			<p>- OR returns true when at least one of inputs is true</p>
+			<p>- NOT return an opposite of input</p>
+		</div>
+		<a name = "pm"><h1>Predefined Macros</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/8a.png" class = "wide">
+			<p>- Target is a Shader Model without dots, for example Shader Model 3.0 means Target = 30</p>
+			<p>- Version is a Unity version without dots, for example Unity version 5.6.0 means Version = 560, Unity 2017.1.0 means version = 201710</p>
+		</div>
+		<p><a href = "nodes.html#n11" class = "ca">More Information...</a></p>
+		<a name = "lv"><h1>Local Variables</h1></a>
+		<hr>
+		<div class = "node">
+			<img src = "images/Tutorials/9a.png" class = "wide">
+			<img src = "images/Tutorials/9b.png" class = "wide">
+			<p>- Local variables allow organizing code into effective commands</p>
+			<p>- The popup with number value determines variable position in compile queue, CameraOutput is always the last one</p>
+		</div>
+		<a name = "pi"><h1>Picker</h1></a>
+		<hr>
+		<p>- Add Post Processing Volume to a camera.</p>
+		<p>- Add Unity Color Grading effect to the Volume profile.</p>
+		<p>- Set effect Mode to Low Definition Range.</p>
+		<p>- Open picker (Window/Post Processing Ultimate/LUT Picker), select camera and find the most suitable LUT texture.</p>
+		<img src = "images/Picker/1.png" class = "wide">
+		<a name = "bl"><h1>Blender</h1></a>
+		<hr>
+		<p>- Add Post Processing Volume to a camera.</p>
+		<p>- Add Unity Color Grading effect to the Volume profile.</p>
+		<p>- Set effect Mode to Low Definition Range.</p>
+		<p>- Open blender (Window/Post Processing Ultimate/LUT Blender), select camera.</p>
+		<img src = "images/Blender/1.png" class = "wide">
+		<p>- Select LUT textures and blend them.</p>
+		<p>- Save new texture, You can save it inside PPU_LUTs folder, so You texture will be avaiable in LUT Picker.</p>
+		<img src = "images/Picker/1.png" class = "wide">
+		<a name = "lo"><h1>Loops</h1></a>
+		<hr>
+		<div class = "node">
+			<p>- Simple loop with arithmetic operations.</p>
+			<img src = "images/Tutorials/14a.png" class = "wide">
+			<img src = "images/Tutorials/14b.png" class = "wide">
+			<p>- This sample shows how to create and average of a 5 pixels with different coords, loops are very useful in blur type shaders where it's easier to sum a lot of elements at once.</p>
+			<img src = "images/Tutorials/14c.png" class = "wide">
+			<p>- Advanced usage of a loop in a blur shader. Manually adding 90 pixels would take a lot more space, this solution is easy and scalable.</p>
+		</div>
+	</div>
+	<div class = "footer">
+		<a href = "https://assetstore.unity.com/publishers/25212"><img src = "images/bottom.png" class = "footerbanner"></a>
+		<hr>
+		<label class = "support">Support: </label><a href = "mailto:assetstore.ntec@gmail.com" class = "fa">assetstore.ntec@gmail.com</a>
+		<br>
+		<label class = "support">&copy; Dawid Moza</label>
+	</div>
+</body>
