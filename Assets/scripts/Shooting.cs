@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
+
+    
     public Transform ammo;
     private GameObject go;
     public static int artefacto;
@@ -24,7 +26,7 @@ public class Shooting : MonoBehaviour
     public Transform posicionArt;
     Rigidbody rb;
     private float nextTimeToFire = 0f;
-    
+   
 
     public Camera cam;
     private void Awake()
@@ -88,8 +90,12 @@ public class Shooting : MonoBehaviour
             animArms.SetBool("Lanzagranadas", false);
         }
 
+
+      
+
     }
 
+    
     private void Launch()
     {
 
