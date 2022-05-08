@@ -6,17 +6,17 @@ public class Artefacto : MonoBehaviour
 {
 
   
-    public Transform thisObject;
+    public GameObject thisObject;
     public GameObject effectoExplosion;
     private void Start()
     {
-        
+        thisObject = GameObject.Find("artefacto");
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        Instantiate(effectoExplosion, thisObject.position, thisObject.rotation);
+        Instantiate(effectoExplosion, thisObject.transform.position, thisObject.transform.rotation);
         
     }
 
