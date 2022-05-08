@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
-
-    
+    public AudioSource reload;
+    public AudioSource disparo;
     public Transform ammo;
     private GameObject go;
     public static int artefacto;
@@ -56,6 +56,7 @@ public class Shooting : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             anim.SetBool("Reload", true);
+            reload.Play();
             animArms.SetBool("ReloadArms", true);
             StartCoroutine(Reload());
             return;
@@ -68,6 +69,8 @@ public class Shooting : MonoBehaviour
         }
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
+
+            disparo.Play();
             Shoot();
             nextTimeToFire = Time.time + 1f / fireRate;
             
@@ -118,7 +121,7 @@ public class Shooting : MonoBehaviour
         {
             anim.SetBool("Reload", true);
             animArms.SetBool("ReloadArms", true);
-            
+            reload.Play();
         }
         if (currentAmmo > 0)
         {
