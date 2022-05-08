@@ -26,7 +26,7 @@ public class Shooting : MonoBehaviour
     public Transform posicionArt;
     Rigidbody rb;
     private float nextTimeToFire = 0f;
-   
+    public GameObject bulletImpact;
 
     public Camera cam;
     private void Awake()
@@ -146,7 +146,7 @@ public class Shooting : MonoBehaviour
         muzzleFlash.Play();
         currentAmmo--;
         RaycastHit hit;
-
+        
 
         if (currentAmmo == 0)
         {
@@ -155,6 +155,7 @@ public class Shooting : MonoBehaviour
         }
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
         {
+            Instantiate(bulletImpact, hit.point, transform.rotation);
             Debug.Log(hit.transform.name);
         }
         Target target = hit.transform.GetComponent<Target>();
