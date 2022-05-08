@@ -8,12 +8,13 @@ public class LibroHistoria : MonoBehaviour
   
     Animator anim;
     public GameObject canvasMenu;
+    public AudioSource mapa;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        
 
+       AudioSource audio = GetComponent<AudioSource>();
 
     }
     void Update()
@@ -21,35 +22,30 @@ public class LibroHistoria : MonoBehaviour
         if (libroAbierto == false && Input.GetKeyUp(KeyCode.M))
         {
            
-            anim.SetBool("abrir", true);
-          
-            
+            anim.SetBool("zoommap", true);
+            mapa.Play();
+
+
             Invoke("AbrirLibro", 1.0f);
             
         }
         if (libroAbierto == true && Input.GetKeyUp(KeyCode.M))
         {
-            anim.SetBool("abrir", false);
-
+            anim.SetBool("zoommap", false);
+           
             libroAbierto = false ;
-            CerrarLibro();
+        
         }
     }
 
     void AbrirLibro()
     {
         libroAbierto = true;
-        Time.timeScale = 0;
+    
 
 
     }
    
-    void CerrarLibro()
-    {
-        
-        Time.timeScale = 1;
-     
-
-    }
+   
 
 }
