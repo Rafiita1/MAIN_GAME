@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
+    public static int llave;
     public AudioSource reload;
     public AudioSource disparo;
     public Transform ammo;

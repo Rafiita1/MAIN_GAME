@@ -31,10 +31,16 @@ public class ShootingAiTut : MonoBehaviour
     public Material green, red, yellow;
     public GameObject projectile;
 
-    private void Awake()
+    private void Start()
     {
         player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
+      
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
     private void Update()
     {
