@@ -11,7 +11,11 @@ GameObject:
   - component: {fileID: 4497603259436972}
   - component: {fileID: 33953044279394820}
   - component: {fileID: 23917375385310826}
+<<<<<<< Updated upstream
   - component: {fileID: 2479170087387746556}
+=======
+  - component: {fileID: 5229841374434546261}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: barrel_01
   m_TagString: Untagged
@@ -82,7 +86,11 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!54 &2479170087387746556
+=======
+--- !u!54 &5229841374434546261
+>>>>>>> Stashed changes
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
