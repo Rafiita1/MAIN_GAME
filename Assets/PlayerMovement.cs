@@ -11,16 +11,19 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
+    public LayerMask sueloMask;
     public Animator anim;
     public int i = 0;
     public int time = 6;
     public bool run = false;
-   
+    public Transform sueloCheck;
+    public float sueloDistance = 0.4f;
 
     public float jumpHeight = 3f;
 
     Vector3 velocity;
     bool isGrounded;
+    bool isSuelo;
    
 
     // Update is called once per frame
@@ -32,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        isSuelo = Physics.CheckSphere(sueloCheck.position, sueloDistance, sueloMask);
 
         if (isGrounded && velocity.y < 0)
         {
@@ -44,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed * Time.deltaTime);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && (isGrounded || isSuelo))
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
