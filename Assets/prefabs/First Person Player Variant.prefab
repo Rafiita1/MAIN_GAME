@@ -1,0 +1,743 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1246320946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246320947}
+  - component: {fileID: 1246320948}
+  m_Layer: 3
+  m_Name: MinimapIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1246320947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246320946}
+  m_LocalRotation: {x: 0.69427437, y: -0, z: 0.000000029802322, w: 0.71971047}
+  m_LocalPosition: {x: 0.262, y: 1.82, z: -0}
+  m_LocalScale: {x: 0.13073672, y: 0.13073672, z: 0.13073672}
+  m_Children: []
+  m_Father: {fileID: 460106567893340085}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 87.939, y: 0, z: 0}
+--- !u!212 &1246320948
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246320946}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 90d4d10e187ad3b4f89ae4baa8984143, type: 3}
+  m_Color: {r: 0.13412571, g: 1, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.24, y: 10.24}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1001 &1261202407812752551
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1720956235654488011, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: reload
+      value: 
+      objectReference: {fileID: 1434598792}
+    - target: {fileID: 1720956235654488011, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: disparo
+      value: 
+      objectReference: {fileID: 1434598791}
+    - target: {fileID: 1720956235654488011, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: Artefacto1
+      value: 
+      objectReference: {fileID: 3312459251312435696, guid: a6aefdcddc6757442924fcac2f7ee462, type: 3}
+    - target: {fileID: 1720956235654488011, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: bulletImpact
+      value: 
+      objectReference: {fileID: 5583100771662740419, guid: 3cbaf15d1b732554e92e5fe645be1299, type: 3}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 119.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.134
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 36.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8557776
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5173439
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -62.308
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937299, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937299, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: sueloCheck
+      value: 
+      objectReference: {fileID: 460106567393344245}
+    - target: {fileID: 1720956236415937299, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937300, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_Name
+      value: First Person Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937300, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937301, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_StepOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937310, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937310, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236415937310, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_Size.z
+      value: 0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236451604338, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236451604338, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.8595505
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236451604338, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236451604338, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236451604340, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236451604340, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236451604340, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236451604341, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.size
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[0].assemblyQualifiedName
+      value: NTEC.PPU.Blur, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[1].assemblyQualifiedName
+      value: NTEC.PPU.ChromaticAberration, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[2].assemblyQualifiedName
+      value: NTEC.PPU.ColorCurves, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[3].assemblyQualifiedName
+      value: NTEC.PPU.CrossedEyes, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[4].assemblyQualifiedName
+      value: NTEC.PPU.Distortion, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[5].assemblyQualifiedName
+      value: NTEC.PPU.Drunk, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[6].assemblyQualifiedName
+      value: NTEC.PPU.EdgeDetection, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[7].assemblyQualifiedName
+      value: NTEC.PPU.EightColors, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[8].assemblyQualifiedName
+      value: NTEC.PPU.EightColors2, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[9].assemblyQualifiedName
+      value: NTEC.PPU.Fade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[10].assemblyQualifiedName
+      value: NTEC.PPU.Fog, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[11].assemblyQualifiedName
+      value: NTEC.PPU.Frame, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[12].assemblyQualifiedName
+      value: NTEC.PPU.Glitch, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[13].assemblyQualifiedName
+      value: NTEC.PPU.Glitch2, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[14].assemblyQualifiedName
+      value: NTEC.PPU.HorizontalBloom, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[15].assemblyQualifiedName
+      value: NTEC.PPU.IndustrialCamera, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[16].assemblyQualifiedName
+      value: NTEC.PPU.Infrared, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[17].assemblyQualifiedName
+      value: NTEC.PPU.Invert, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[18].assemblyQualifiedName
+      value: NTEC.PPU.Noctovision, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[19].assemblyQualifiedName
+      value: NTEC.PPU.Noise, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[20].assemblyQualifiedName
+      value: NTEC.PPU.OldFilm, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[21].assemblyQualifiedName
+      value: NTEC.PPU.Overlay, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[22].assemblyQualifiedName
+      value: NTEC.PPU.Pixelize, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[23].assemblyQualifiedName
+      value: NTEC.PPU.Posterize, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[24].assemblyQualifiedName
+      value: NTEC.PPU.RadialBlur, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[25].assemblyQualifiedName
+      value: NTEC.PPU.RadialBlur2, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[26].assemblyQualifiedName
+      value: NTEC.PPU.ScanLines, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[27].assemblyQualifiedName
+      value: NTEC.PPU.ScreenSpaceShadows, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[28].assemblyQualifiedName
+      value: NTEC.PPU.SelectColor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[29].assemblyQualifiedName
+      value: NTEC.PPU.Sepia, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[30].assemblyQualifiedName
+      value: NTEC.PPU.Sharpen, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[31].assemblyQualifiedName
+      value: NTEC.PPU.Splatter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662192, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[32].assemblyQualifiedName
+      value: NTEC.PPU.Threshold, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662196, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662197, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662197, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_AllowMSAA
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720956236697662197, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 503
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+--- !u!1 &460106567893340083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1720956236415937300, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+  m_PrefabInstance: {fileID: 1261202407812752551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &460106567893340085 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1720956236415937298, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+  m_PrefabInstance: {fileID: 1261202407812752551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &460106567393344245 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1720956237056974418, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+  m_PrefabInstance: {fileID: 1261202407812752551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &460106567083136592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1720956236697662199, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+  m_PrefabInstance: {fileID: 1261202407812752551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &766678108676707733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1955540004347687218, guid: 5ad3a91c4f8cf8847acaf03bac1ebf0e, type: 3}
+  m_PrefabInstance: {fileID: 1261202407812752551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &242846202
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460106567893340083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &575594933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460106567083136592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 7
+  m_ObsoleteRenderingPath: 0
+  m_ObsoleteFrameSettings:
+    overrides: 0
+    enableShadow: 0
+    enableContactShadows: 0
+    enableShadowMask: 0
+    enableSSR: 0
+    enableSSAO: 0
+    enableSubsurfaceScattering: 0
+    enableTransmission: 0
+    enableAtmosphericScattering: 0
+    enableVolumetrics: 0
+    enableReprojectionForVolumetrics: 0
+    enableLightLayers: 0
+    enableExposureControl: 1
+    diffuseGlobalDimmer: 0
+    specularGlobalDimmer: 0
+    shaderLitMode: 0
+    enableDepthPrepassWithDeferredRendering: 0
+    enableTransparentPrepass: 0
+    enableMotionVectors: 0
+    enableObjectMotionVectors: 0
+    enableDecals: 0
+    enableRoughRefraction: 0
+    enableTransparentPostpass: 0
+    enableDistortion: 0
+    enablePostprocess: 0
+    enableOpaqueObjects: 0
+    enableTransparentObjects: 0
+    enableRealtimePlanarReflection: 0
+    enableMSAA: 0
+    enableAsyncCompute: 0
+    runLightListAsync: 0
+    runSSRAsync: 0
+    runSSAOAsync: 0
+    runContactShadowsAsync: 0
+    runVolumeVoxelizationAsync: 0
+    lightLoopSettings:
+      overrides: 0
+      enableDeferredTileAndCluster: 0
+      enableComputeLightEvaluation: 0
+      enableComputeLightVariants: 0
+      enableComputeMaterialVariants: 0
+      enableFptlForForwardOpaque: 0
+      enableBigTilePrepass: 0
+      isFptlEnabled: 0
+  clearColorMode: 0
+  backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
+  clearDepth: 1
+  volumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  volumeAnchorOverride: {fileID: 0}
+  antialiasing: 0
+  SMAAQuality: 2
+  dithering: 0
+  stopNaNs: 0
+  taaSharpenStrength: 0.5
+  TAAQuality: 1
+  taaHistorySharpening: 0.35
+  taaAntiFlicker: 0.5
+  taaMotionVectorRejection: 0
+  taaAntiHistoryRinging: 0
+  physicalParameters:
+    m_Iso: 200
+    m_ShutterSpeed: 0.005
+    m_Aperture: 16
+    m_BladeCount: 5
+    m_Curvature: {x: 2, y: 11}
+    m_BarrelClipping: 0.25
+    m_Anamorphism: 0
+  flipYMode: 0
+  xrRendering: 1
+  fullscreenPassthrough: 0
+  allowDynamicResolution: 0
+  customRenderingSettings: 0
+  invertFaceCulling: 0
+  probeLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hasPersistentHistory: 0
+  exposureTarget: {fileID: 0}
+  m_RenderingPathCustomFrameSettings:
+    bitDatas:
+      data1: 72198262773251917
+      data2: 13763000468760363032
+    lodBias: 1
+    lodBiasMode: 0
+    lodBiasQualityLevel: 0
+    maximumLODLevel: 0
+    maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    sssQualityMode: 0
+    sssQualityLevel: 0
+    sssCustomSampleBudget: 20
+    materialQuality: 0
+  renderingPathCustomFrameSettingsOverrideMask:
+    mask:
+      data1: 0
+      data2: 0
+  defaultFrameSettings: 0
+--- !u!82 &1434598791
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766678108676707733}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e9d24cd237a4d4c4eaf20b9610a33b26, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.125
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 1
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.068
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1434598792
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766678108676707733}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2ee2a6be00227a947a6243d3eb8400a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.379
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

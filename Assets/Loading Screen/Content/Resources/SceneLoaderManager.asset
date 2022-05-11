@@ -19,7 +19,7 @@ MonoBehaviour:
       DisplayName: Potolos el resquebrajado
       Description: "Lugar donde reside Potolos el Resquebrajado, custodiando una
         de las llaves necesarias para atravesar el Porton Arb\xF3reo."
-      SkipType: 4
+      SkipType: 3
       LoadingType: 1
       FakeLoadingTime: 7
       Backgrounds:
