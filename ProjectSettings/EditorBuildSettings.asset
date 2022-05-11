@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Aldea.unity
+    guid: 8830fe3e423cef34499025a1c5e6243f
+  - enabled: 1
+    path: Assets/Scenes/ZonaJefe.unity
+    guid: 2e74ab4a07a36214c89d9b5200881ac4
   m_configObjects: {}
