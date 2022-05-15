@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
       
      
 
-
+        DontDestroyOnLoad(gameObject);
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         isSuelo = Physics.CheckSphere(sueloCheck.position, sueloDistance, sueloMask);

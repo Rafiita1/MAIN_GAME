@@ -7,6 +7,9 @@ public class OpenLastDoor : MonoBehaviour
     bool dooropened = false;
     public AudioClip wooden;
     Animator anim;
+    public GameObject llave1;
+    public GameObject llave2;
+    public GameObject llave3;
 
     private void Start()
     {
@@ -14,7 +17,7 @@ public class OpenLastDoor : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && Input.GetKey(KeyCode.E) && Shooting.llave == 3 && dooropened == false)
+        if (other.CompareTag("Player") && llave1.activeInHierarchy == true && llave2.activeInHierarchy== true && llave3.activeInHierarchy == true && Input.GetKey(KeyCode.E)  && dooropened == false )
         {
 
 

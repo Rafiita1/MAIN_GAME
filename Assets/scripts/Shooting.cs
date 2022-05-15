@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
+    public static int artefactoBossCount;
     public static int llave;
     public AudioSource reload;
     public AudioSource disparo;
@@ -54,7 +55,7 @@ public class Shooting : MonoBehaviour
     {
         if (isReloading)
             return;
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && currentAmmo<20)
         {
             anim.SetBool("Reload", true);
             reload.Play();
@@ -68,6 +69,7 @@ public class Shooting : MonoBehaviour
             StartCoroutine(Reload());
             return;
         }
+       
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
 
