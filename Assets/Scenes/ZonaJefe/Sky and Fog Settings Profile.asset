@@ -96,7 +96,7 @@ MonoBehaviour:
     min: 0
   aerosolDensity:
     m_OverrideState: 1
-    m_Value: 0.01192826
+    m_Value: 0.749
     min: 0
     max: 1
   aerosolTint:
@@ -256,7 +256,7 @@ MonoBehaviour:
     m_Value: 77.9
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 132.2
+    m_Value: 21
     min: 1
   enableVolumetricFog:
     m_OverrideState: 1

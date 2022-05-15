@@ -27,10 +27,21 @@ MonoBehaviour:
     - SceneName: Aldea
       SceneAsset: {fileID: 102900000, guid: 8830fe3e423cef34499025a1c5e6243f, type: 3}
       DisplayName: Aldea Nocheoscura
-      Description: 
+      Description: Esta misteriosa aldea es el punto de encuentro de la gran mayoria
+        de clanes, donde se realizan atroces asesinatos.
       SkipType: 3
-      LoadingType: 0
-      FakeLoadingTime: 3
+      LoadingType: 1
+      FakeLoadingTime: 7
+      Backgrounds:
+      - {fileID: 21300000, guid: a5b9887d6afe49348a5b5b084b823eaf, type: 3}
+    - SceneName: Aldea
+      SceneAsset: {fileID: 102900000, guid: 8830fe3e423cef34499025a1c5e6243f, type: 3}
+      DisplayName: Aldea Nocheoscura
+      Description: Esta misteriosa aldea es el punto de encuentro de la gran mayoria
+        de clanes, donde se realizan atroces asesinatos.
+      SkipType: 3
+      LoadingType: 1
+      FakeLoadingTime: 7
       Backgrounds:
       - {fileID: 21300000, guid: a5b9887d6afe49348a5b5b084b823eaf, type: 3}
   TipList:

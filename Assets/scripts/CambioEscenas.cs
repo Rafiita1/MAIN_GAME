@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class CambioEscenas : MonoBehaviour
 {
     
-    public string SceneName = "ZonaJefe";
+    public string SceneName = "Aldea";
     private void OnTriggerEnter(Collider other)
     {
   

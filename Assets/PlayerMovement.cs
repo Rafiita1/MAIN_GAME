@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
         if (run == false && Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 6f;
+            speed = 8f;
 
 
         }
