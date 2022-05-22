@@ -7,7 +7,7 @@ public class PuertaPotolosd : MonoBehaviour
     public GameObject canvas;
     private void OnTriggerEnter(Collider other)
     {
-        if (Shooting.artefactoBossCount == 1 && other.CompareTag("Player"))
+        if ( other.CompareTag("Player"))
         {
             Destroy(gameObject);
         }

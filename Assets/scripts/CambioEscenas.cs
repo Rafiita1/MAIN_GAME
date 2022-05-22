@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class CambioEscenas : MonoBehaviour
 {
-    
+    public GameObject canvas;
     public string SceneName = "Aldea";
     private void OnTriggerEnter(Collider other)
     {
   
-        if (other.CompareTag("Player") )
+        if (Shooting.artefactoBossCount == 1 && other.CompareTag("Player"))
         {
          
 
@@ -19,8 +19,17 @@ public class CambioEscenas : MonoBehaviour
             
 
         }
+        else
+        {
+            canvas.SetActive(true);
+        }
     }
 
- 
+    private void OnTriggerExit(Collider other)
+    {
+        canvas.SetActive(false);
+    }
+
+
 }
 

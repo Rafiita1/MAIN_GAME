@@ -3,7 +3,7 @@ using UnityEngine.AI;
 public class ShootingAiTut : MonoBehaviour
 {
     public NavMeshAgent agent;
-
+    Animator anim;
     public Transform player;
     public GameObject gun;
 
@@ -33,6 +33,7 @@ public class ShootingAiTut : MonoBehaviour
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
       
@@ -46,6 +47,7 @@ public class ShootingAiTut : MonoBehaviour
     {
         if (!isDead)
         {
+            
             //Check if Player in sightrange
             playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 
@@ -56,6 +58,8 @@ public class ShootingAiTut : MonoBehaviour
             if (playerInSightRange && !playerInAttackRange) ChasePlayer();
             if (playerInAttackRange && playerInSightRange) AttackPlayer();
         }
+
+      
     }
 
     private void Patroling()
@@ -91,6 +95,7 @@ public class ShootingAiTut : MonoBehaviour
 
         if (Physics.Raycast(walkPoint, -transform.up, 2, whatIsGround))
             walkPointSet = true;
+        
     }
     private void ChasePlayer()
     {
@@ -99,6 +104,9 @@ public class ShootingAiTut : MonoBehaviour
         agent.SetDestination(player.position);
 
         GetComponent<MeshRenderer>().material = yellow;
+       
+        anim.SetBool("fly", true);
+
     }
     private void AttackPlayer()
     {
@@ -108,6 +116,8 @@ public class ShootingAiTut : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
+
+        
 
         if (!alreadyAttacked)
         {
@@ -120,6 +130,7 @@ public class ShootingAiTut : MonoBehaviour
 
             alreadyAttacked = true;
             Invoke("ResetAttack", timeBetweenAttacks);
+
         }
 
         GetComponent<MeshRenderer>().material = red;
@@ -129,6 +140,7 @@ public class ShootingAiTut : MonoBehaviour
         if (isDead) return;
 
         alreadyAttacked = false;
+        
     }
     public void TakeDamage(int damage)
     {
