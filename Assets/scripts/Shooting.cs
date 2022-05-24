@@ -173,8 +173,17 @@ public class Shooting : MonoBehaviour
 
 
         }
+        Totem totem = hit.transform.GetComponent<Totem>();
+        if (totem != null)
+        {
 
-        
+            totem.TakeDamage(damage);
+
+
+
+        }
+
+
     }
 
  
